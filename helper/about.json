@@ -1,0 +1,149 @@
+{
+  "general": [
+    {
+    "icon": "✍\uD83C\uDFFC",
+    "info": "Jane"
+    },
+    {
+      "icon": "\uD83C\uDF82",
+      "info": "27"
+    },
+    {
+    "icon": "\uD83D\uDCCD",
+    "info": "Kiel, Germany"
+    }
+  ],
+  "education": [
+    {
+      "program": "B.Sc. in Computer Science",
+      "institution": "University of Applied Sciences Kiel",
+      "period": "2022 - present",
+      "grade": "1.5",
+      "details": ["Focus on artificial intelligence"]
+    },
+    {
+      "program": "Frontend Developer Program",
+      "institution": "opencampus",
+      "period": "January - July 2022",
+      "details": ["Inverted classroom model: learning through videos and asking questions in 'class'"]
+    },
+    {
+      "program": "B.A. Educational Science and Sociology",
+      "institution": "Christian-Albrecht-University Kiel",
+      "period": "2018-2021",
+      "grade": "1.5",
+      "details": [
+        "Focus on organisational sociology",
+        "Bachelor thesis on the topic of New Work"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "position": "Working Student in Software Development",
+      "company": "OTTO",
+      "period": "Feb 2024 - today",
+      "details": []
+    },
+    {
+      "position": "Working Student in Software Development",
+      "company": "GEPROG",
+      "period": "Feb 2022 - 2024",
+      "details": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "icon": "vscode-icons:file-type-html",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    },
+    {
+      "name": "CSS",
+      "icon": "vscode-icons:file-type-css",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "vscode-icons:file-type-tailwind",
+        "url": "https://tailwindcss.com/docs"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "skill-icons:javascript",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "vscode-icons:file-type-typescript-official",
+        "url": "https://www.typescriptlang.org/docs/"
+    },
+    {
+      "name": "React",
+      "icon": "vscode-icons:file-type-reactjs",
+        "url": "https://reactjs.org/docs/getting-started.html"
+    },
+    {
+      "name": "Vue.js",
+      "icon": "vscode-icons:file-type-vue",
+      "url": "https://vuejs.org/v2/guide/"
+    },
+    {
+      "name": "Nuxt 3",
+      "icon": "vscode-icons:file-type-nuxt",
+      "url": "https://v3.nuxtjs.org/docs/get-started/installation"
+    },
+    {
+      "name": "Flutter",
+      "icon": "vscode-icons:file-type-flutter",
+      "url": "https://flutter.dev/docs"
+    },
+    {
+      "name": "C",
+      "icon": "devicon:c",
+      "url": "https://www.learn-c.org/"
+    },
+    {
+      "name": "C++",
+      "icon": "vscode-icons:file-type-cpp3",
+      "url": "https://www.cplusplus.com/doc/"
+    },
+    {
+      "name": "Java",
+      "icon": "vscode-icons:file-type-java",
+      "url": "https://docs.oracle.com/en/java/"
+    },
+    {
+      "name": "Figma",
+      "icon": "devicon:figma",
+      "url": "https://www.figma.com/"
+    },
+    {
+      "name": "SQL",
+      "icon": "vscode-icons:file-type-sql",
+      "url": "https://www.w3schools.com/sql/"
+    }
+  ],
+  "contact": [
+    {
+      "platform": "LinkedIn",
+      "icon": "raphael:linkedin",
+      "url": "www.linkedin.com/in/\njane-schönfeld\n\n"
+    },
+    {
+      "platform": "Xing",
+      "icon": "grommet-icons:xing",
+      "url": "https://www.xing.com/profile/Jane_Schoenfeld2/web_profiles?expandNeffi=true"
+    },
+    {
+      "platform": "GitHub",
+      "icon": "mdi:github",
+      "url": "https://github.com/janelucia"
+    },
+    {
+      "platform": "Email",
+      "icon": "material-symbols:mail",
+      "url": "janeluciaschoenfeld@gmail.com"
+    }
+  ]
+}
