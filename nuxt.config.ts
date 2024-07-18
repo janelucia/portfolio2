@@ -10,5 +10,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   image: {
     format: ['webp']
-  }
+  },
+  runtimeConfig: {
+    githubPat: "", // can be overridden by NUXT_GITHUB_PAT environment variable
+  },
 })

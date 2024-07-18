@@ -4,22 +4,35 @@
       <div class="w-2/3">
         <NuxtImg src="./images/Jane.jpg" class="rounded "/>
       </div>
-      <div class="w-full flex flex-col gap-2">
-        <SectionHeader title="Hello" bgColor="bg-secondary" text-size="text-2xl" />
-        <h1 class="text-4xl text-text-light">I am Jane,</h1>
-        <p>
-          a frontend developer based in Kiel, currently doing my studies at the University of Applied Sciences Kiel.
-          <br>
-          As a former Sociology and educational science major I am particularly interested in the intersection of
-          technology and society.
-          <br>
-          Helping building a digital world which suits the needs of everyone is my main goal.
-        </p>
-      </div>
-      <div class="flex gap-4 self-end">
-        <a v-for="contact in infos.contact" :key="contact.platform" :href="contact.url">
-          <Icon :name="contact.icon" class="text-2xl"/>
-        </a>
+      <div class="w-full flex flex-col gap-4">
+        <div class="w-full flex flex-col gap-2">
+          <SectionHeader title="Hello" bgColor="bg-secondary" text-size="text-2xl" />
+          <h1 class="text-4xl text-text-light">I am Jane,</h1>
+          <p>
+            a frontend developer based in Kiel, currently doing my studies at the University of Applied Sciences Kiel.
+            <br>
+            As a former Sociology and educational science major I am particularly interested in the intersection of
+            technology and society.
+            <br>
+            Helping building a digital world which suits the needs of everyone is my main goal.
+          </p>
+        </div>
+        <CommitCard
+            :avatar-url="latestCommit.committer.avatar_url"
+            :repository-name="latestCommit.repository.name"
+            :owner-name="latestCommit.repository.owner.name"
+            :commit-message="latestCommit.message"
+            :committer-name="latestCommit.committer.name"
+            :commit-date="latestCommit.date"
+            :repository-url="latestCommit.repository.html_url"
+            :owner-url="latestCommit.repository.owner.html_url"
+            :committer-url="latestCommit.committer.html_url"
+        />
+        <div class="flex gap-4 self-end">
+          <a v-for="contact in infos.contact" :key="contact.platform" :href="contact.url">
+            <Icon :name="contact.icon" class="text-2xl"/>
+          </a>
+        </div>
       </div>
     </div>
     <div class="bg-background px-4 py-12 flex flex-col gap-4">
@@ -29,6 +42,10 @@
           <li class="flex gap-2 items-center text-lg"> {{info.icon}} <p>{{ info.info }}</p></li>
         </ul>
       </div>
+      <video class="w-full" autoplay muted controls>
+        <source src="https://www.youtube.com/watch?v=sR6hhkqADF0&t=13s&pp=ygUSZmgga2llbCBpbmZvcm1hdGlr" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
     <div class="bg-white px-4 py-12 flex flex-col gap-4">
       <SectionHeader title="Skills" bgColor="bg-accent" text-size="text-lg" />
@@ -66,8 +83,8 @@
         </li>
       </ul>
     </div>
-    <div>
-      <SectionHeader title="Interests" bgColor="bg-accent" text-size="text-lg" />
+    <div class="flex px-4 py-12 bg-background">
+      <SectionHeader title="Projects" bgColor="bg-primary" text-size="text-lg" />
     </div>
   </NuxtLayout>
 </template>
@@ -103,4 +120,6 @@ interface Infos {
 
 import infosJson from '~/helper/about.json';
 const infos: Infos = infosJson;
+
+const { data: latestCommit } = useFetch("/api/github/latestCommit");
 </script>
