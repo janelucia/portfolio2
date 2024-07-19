@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-8 p-4 rounded-md shadow-md bg-secondary">
+  <div class="flex flex-col gap-8 p-4 rounded-md shadow-md bg-secondary max-w-xl">
     <div class="flex justify-between gap-4">
       <div class="flex gap-4">
         <div class="avatar">

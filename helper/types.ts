@@ -1,9 +1,9 @@
-export type General = {
+type General = {
     icon: string;
     info: string;
 };
 
-export type Education = {
+type Education = {
     program: string;
     institution: string;
     period: string;
@@ -11,27 +11,27 @@ export type Education = {
     details: string[];
 };
 
-export type Work = {
+type Work = {
     position: string;
     company: string;
     period: string;
     details: string[];
 };
 
-export type Skills = {
+type Skills = {
     name: string;
     icon: string;
     url: string;
 };
 
-export type Contact = {
-    [key: string]:{
-    icon: string;
-    url: string;
-    }
+type Contact = {
+    [key: string]: {
+        icon: string;
+        url: string;
+    };
 };
 
-export type Project = {
+type Project = {
     name: string;
     description: string;
     currentState: string;
