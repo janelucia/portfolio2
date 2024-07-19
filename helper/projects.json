@@ -2,14 +2,16 @@
     {
       "name": "tictacthetoe",
       "subTitle": "Personal Project with ",
+      "currentState": "in progress",
       "description": "This is the second rendition of my university project ultimateTicTacToe. I wanted to do it with Nuxt3. The game is hosted on vercel.",
-      "image": "tictacthetoe.png",
+      "image": "./images/tictacthetoe.png",
       "githubUrl": "https://github.com/janelucia/tictacthetoe",
       "liveUrl": "https://tictacthetoe.vercel.app/info"
     },
     {
       "name": "ultimateTicTacToe",
       "subTitle": "University Project with vanilla JS, HTML and CSS",
+      "currentState": "finished",
       "description": "This is a project I did during my studies at the university. We had to do a game with vanilla JS, HTML and CSS. I decided on the game classic tic tac toe with a twist. Instead of 3x3 you have 9x9 fields. First you have to win the small fields in order to win one big field.",
       "image": "",
       "githubUrl": "https://github.com/janelucia/ultimateTicTacToe",
@@ -18,6 +20,7 @@
     {
       "name": "WA-FeWo",
       "subTitle": "University Project with vanilla JS, HTML and CSS",
+      "currentState": "finished",
       "description": "This is a project I did during my studies at the university. We had to do a airBnb dupe with information from airBnb but our own design.",
       "image": "",
       "githubUrl": "https://github.com/janelucia/WA-FeWo",

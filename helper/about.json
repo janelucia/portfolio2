@@ -1,16 +1,16 @@
 {
   "general": [
     {
-    "icon": "✍\uD83C\uDFFC",
-    "info": "Jane"
+      "icon": "✍\uD83C\uDFFC",
+      "info": "Jane"
     },
     {
       "icon": "\uD83C\uDF82",
       "info": "27"
     },
     {
-    "icon": "\uD83D\uDCCD",
-    "info": "Kiel, Germany"
+      "icon": "\uD83D\uDCCD",
+      "info": "Kiel, Germany"
     }
   ],
   "education": [
@@ -19,13 +19,17 @@
       "institution": "University of Applied Sciences Kiel",
       "period": "2022 - present",
       "grade": "1.5",
-      "details": ["Focus on artificial intelligence"]
+      "details": [
+        "Focus on artificial intelligence"
+      ]
     },
     {
       "program": "Frontend Developer Program",
       "institution": "opencampus",
       "period": "January - July 2022",
-      "details": ["Inverted classroom model: learning through videos and asking questions in 'class'"]
+      "details": [
+        "Inverted classroom model: learning through videos and asking questions in 'class'"
+      ]
     },
     {
       "program": "B.A. Educational Science and Sociology",
@@ -61,27 +65,27 @@
     {
       "name": "CSS",
       "icon": "vscode-icons:file-type-css",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
     {
       "name": "Tailwind CSS",
       "icon": "vscode-icons:file-type-tailwind",
-        "url": "https://tailwindcss.com/docs"
+      "url": "https://tailwindcss.com/docs"
     },
     {
       "name": "JavaScript",
       "icon": "skill-icons:javascript",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
       "name": "TypeScript",
       "icon": "vscode-icons:file-type-typescript-official",
-        "url": "https://www.typescriptlang.org/docs/"
+      "url": "https://www.typescriptlang.org/docs/"
     },
     {
       "name": "React",
       "icon": "vscode-icons:file-type-reactjs",
-        "url": "https://reactjs.org/docs/getting-started.html"
+      "url": "https://reactjs.org/docs/getting-started.html"
     },
     {
       "name": "Vue.js",
@@ -124,26 +128,22 @@
       "url": "https://www.w3schools.com/sql/"
     }
   ],
-  "contact": [
-    {
-      "platform": "LinkedIn",
+  "contact": {
+    "linkedin": {
       "icon": "raphael:linkedin",
       "url": "www.linkedin.com/in/\njane-schönfeld\n\n"
     },
-    {
-      "platform": "Xing",
+    "xing": {
       "icon": "grommet-icons:xing",
       "url": "https://www.xing.com/profile/Jane_Schoenfeld2/web_profiles?expandNeffi=true"
     },
-    {
-      "platform": "GitHub",
+    "github": {
       "icon": "mdi:github",
       "url": "https://github.com/janelucia"
     },
-    {
-      "platform": "Email",
+    "email": {
       "icon": "material-symbols:mail",
       "url": "janeluciaschoenfeld@gmail.com"
     }
-  ]
+  }
 }

@@ -16,7 +16,7 @@
           <a href="#" class="menu-item">Get in touch</a>
         </div>
         <div class="flex gap-4">
-          <a v-for="contact in contactInfo" :key="contact.platform" :href="contact.url">
+          <a v-for="contact in contactInfo" :key="contact" :href="contact.url">
             <Icon :name="contact.icon" class="text-2xl"/>
           </a>
         </div>
@@ -32,13 +32,12 @@
 </template>
 <script setup lang="ts">
 
-interface ContactInfo { platform: string; icon: string; url: string }
-
 
 import { ref } from 'vue';
-import infoJson from '~/helper/about.json';
+import aboutJson from '~/helper/about.json';
+import type {Contact} from "~/helper/types";
 
-const contactInfo : ContactInfo[] = infoJson.contact;
+const contactInfo : Contact = aboutJson.contact;
 
 const isActive = ref(false);
 
