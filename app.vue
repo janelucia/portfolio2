@@ -55,7 +55,7 @@
     </div>
     <Section text-size="text-lg" bg-color="bg-accent" section-title="Education" bg-color-section="bg-background">
       <ul v-for="education in educationInfos" :key="education.program">
-          <Card :title="education.institution" :additional-information="education.period" :subtitle="education.program">
+          <Card :title="education.institution" :additional-information="education.period" :subtitle="education.program" bg-card-color="bg-white">
             <p v-if="education.grade" class="text-gray-700" > (Current) Grade: {{ education.grade }} </p>
             <ul class="text-gray-700 list-disc list-inside" v-for="detail in education.details">
               <li>{{ detail }}</li>
@@ -65,7 +65,7 @@
     </Section>
     <Section text-size="text-lg" bg-color="bg-accent" section-title="Work" bg-color-section="bg-white">
       <ul v-for="work in workInfos" :key="work.company">
-          <Card :title="work.company" :additional-information="work.period" :subtitle="work.position">
+          <Card :title="work.company" :additional-information="work.period" :subtitle="work.position" bg-card-color="bg-background">
             <ul class="text-gray-700 list-disc list-inside" v-for="detail in work.details">
               <li>{{ detail }}</li>
             </ul>
@@ -75,7 +75,7 @@
     <Section text-size="text-2xl" bg-color="bg-primary" section-title="Projects" bg-color-section="bg-background">
       <ul v-for="project in projectInfos" :key="project.name">
         <li>
-          <Card :title="project.name" :additional-information="project.currentState" :image="project.image">
+          <Card :title="project.name" :additional-information="project.currentState" :image="project.image" bg-card-color="bg-white">
             <p>{{ project.description }}</p>
             <div class="flex items-center justify-end gap-4">
               <a :href="project.githubUrl" class="text-2xl">
