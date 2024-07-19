@@ -89,6 +89,23 @@
         </li>
     </ul>
     </Section>
+    <Section text-size="text-2xl" bg-color="bg-secondary" section-title="Contact" bg-color-section="bg-white">
+      <div class="flex flex-col gap-4">
+        <h3 class="font-bold text-4xl">Let's create together</h3>
+        <p>
+          I am always open for new projects and collaborations.
+          <br>
+          If you have an idea or a project in mind, feel free to contact me.
+        </p>
+        <div class="flex items-center justify-center w-full">
+          <a :href="`mailto: ${contactInfos.email.url}`" class="text-lg" >
+            <button class="px-4 py-2 bg-secondary rounded shadow-sm">
+              janeluciaschoenfeld@gmail.com
+            </button>
+          </a>
+        </div>
+      </div>
+    </Section>
   </NuxtLayout>
 </template>
 

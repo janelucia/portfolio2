@@ -25,8 +25,15 @@
     <main class="flex flex-col gap-4">
       <slot />
     </main>
-    <footer class="p-4">
+    <footer class="p-4 flex items-center justify-between">
       <p class="text-3xl font-bold text-text-light">{JS}</p>
+      <ul class="flex gap-4">
+        <li v-for="contact in contactInfo" :key="contact.icon">
+          <a :href="contact.url">
+            <Icon :name="contact.icon" class="text-2xl"/>
+          </a>
+        </li>
+      </ul>
     </footer>
   </div>
 </template>
