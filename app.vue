@@ -42,10 +42,7 @@
           <li class="flex gap-2 items-center text-lg"> {{info.icon}} <p>{{ info.info }}</p></li>
         </ul>
       </div>
-      <video class="w-full" autoplay muted controls>
-        <source src="https://www.youtube.com/watch?v=sR6hhkqADF0&t=13s&pp=ygUSZmgga2llbCBpbmZvcm1hdGlr" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <LiteYouTubeEmbed videoid="sR6hhkqADF0" title="Mein Studium an der FH Kiel: Informatik" muted ></LiteYouTubeEmbed>
     </div>
     <div class="bg-white px-4 py-12 flex flex-col gap-4">
       <SectionHeader title="Skills" bgColor="bg-accent" text-size="text-lg" />
@@ -56,8 +53,7 @@
         </a>
       </div>
     </div>
-    <div class="px-4 py-12 bg-background flex flex-col gap-4">
-      <SectionHeader title="Education" bgColor="bg-accent" text-size="text-lg" />
+    <Section text-size="text-lg" bg-color="bg-white" section-title="Education" bg-color-section="bg-accent">
       <ul v-for="education in infos.education" :key="education.program">
         <li class="p-4 flex flex-col gap-2 bg-white rounded shadow-md">
           <p class="text-xl font-bold">{{ education.institution }}</p>
@@ -69,9 +65,8 @@
           </ul>
         </li>
       </ul>
-    </div>
-    <div class="bg-white px-4 py-12 flex flex-col gap-4">
-      <SectionHeader title="Work" bgColor="bg-accent" text-size="text-lg" />
+    </Section>
+    <Section text-size="text-lg" bg-color="bg-accent" section-title="Work" bg-color-section="bg-white">
       <ul v-for="work in infos.work" :key="work.company">
         <li class="p-4 flex flex-col gap-2 bg-background rounded shadow-md">
           <p class="text-xl font-bold">{{ work.company }}</p>
@@ -82,7 +77,7 @@
           </ul>
         </li>
       </ul>
-    </div>
+    </Section>
     <div class="flex px-4 py-12 bg-background">
       <SectionHeader title="Projects" bgColor="bg-primary" text-size="text-lg" />
     </div>
@@ -90,6 +85,8 @@
 </template>
 
 <script setup lang="ts">
+
+import Section from "~/components/Section.vue";
 
 interface Infos {
   general: Array<{ icon: string; info: string }>;
@@ -117,6 +114,9 @@ interface Infos {
     url: string;
   }>;
 }
+
+import LiteYouTubeEmbed from 'vue-lite-youtube-embed'
+import 'vue-lite-youtube-embed/style.css'
 
 import infosJson from '~/helper/about.json';
 const infos: Infos = infosJson;
