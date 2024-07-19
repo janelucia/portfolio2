@@ -1,4 +1,4 @@
-import { Commits } from "~/helper/types";
+import { Commits } from "~/helper/githubTypes";
 import { useGithubApi } from "~/server/api/utils/github";
 
 export default defineEventHandler(async (event) => {

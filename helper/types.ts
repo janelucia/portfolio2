@@ -1,39 +1,34 @@
-export type Commit = {
-    sha: string;
-    commit: {
-        message: string;
-        committer: {
-            date: string;
-        };
-    };
-    repository: {
-        html_url: string;
+export type About = {
+    general: Array<{ icon: string; info: string }>;
+    education: Array<{
+        program: string;
+        institution: string;
+        period: string;
+        grade?: string;
+        details: string[];
+    }>;
+    work: Array<{
+        position: string;
+        company: string;
+        period: string;
+        details: string[];
+    }>;
+    skills: Array<{
         name: string;
-        owner: {
-            html_url: string;
-            login: string;
-        };
-    };
-    committer: {
-        login: string;
-        avatar_url: string;
-        html_url: string;
-    };
-};
+        icon: string;
+        url: string;
+    }>;
+    contact: Array<{
+        platform: string;
+        icon: string;
+        url: string;
+    }>;
+}
 
-export type Commits = {
-    items: Commit[];
-};
-
-export type Repo = {
-    id: number;
-    owner: {
-        avatar_url: string;
-        login: string;
-        html_url: string;
-    };
+export type Project = {
     name: string;
-    updated_at: string;
-    html_url: string;
-    homepage: string;
-};
+    description: string;
+    image: string;
+    githubUrl: string;
+    liveUrl: string;
+}

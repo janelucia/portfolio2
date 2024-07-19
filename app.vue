@@ -29,7 +29,7 @@
             :committer-url="latestCommit.committer.html_url"
         />
         <div class="flex gap-4 self-end">
-          <a v-for="contact in infos.contact" :key="contact.platform" :href="contact.url">
+          <a v-for="contact in aboutInfos.contact" :key="contact.platform" :href="contact.url">
             <Icon :name="contact.icon" class="text-2xl"/>
           </a>
         </div>
@@ -38,7 +38,7 @@
     <div class="bg-background px-4 py-12 flex flex-col gap-4">
       <SectionHeader title="About Me" bgColor="bg-accent" text-size="text-2xl"/>
       <div class="flex flex-col gap-4">
-        <ul v-for="info in infos.general" :key="info.info">
+        <ul v-for="info in aboutInfos.general" :key="info.info">
           <li class="flex gap-2 items-center text-lg"> {{info.icon}} <p>{{ info.info }}</p></li>
         </ul>
       </div>
@@ -47,14 +47,14 @@
     <div class="bg-white px-4 py-12 flex flex-col gap-4">
       <SectionHeader title="Skills" bgColor="bg-accent" text-size="text-lg" />
       <div class="flex flex-wrap gap-4 justify-around">
-        <a  v-for="skill in infos.skills" :key="skill.name" :href="skill.url" class="flex flex-col items-center gap-2 w-1/3 hover:bg-background cursor-pointer" target="_blank">
+        <a v-for="skill in aboutInfos.skills" :key="skill.name" :href="skill.url" class="flex flex-col items-center gap-2 w-1/3 hover:bg-background cursor-pointer" target="_blank">
             <Icon v-if="skill.icon" :name="skill.icon" alt="Logo" class="w-16 h-16" />
             {{ skill.name }}
         </a>
       </div>
     </div>
-    <Section text-size="text-lg" bg-color="bg-white" section-title="Education" bg-color-section="bg-accent">
-      <ul v-for="education in infos.education" :key="education.program">
+    <Section text-size="text-lg" bg-color="bg-accent" section-title="Education" bg-color-section="bg-background">
+      <ul v-for="education in aboutInfos.education" :key="education.program">
         <li class="p-4 flex flex-col gap-2 bg-white rounded shadow-md">
           <p class="text-xl font-bold">{{ education.institution }}</p>
           <p class="text-gray-700">{{ education.period }}</p>
@@ -67,7 +67,7 @@
       </ul>
     </Section>
     <Section text-size="text-lg" bg-color="bg-accent" section-title="Work" bg-color-section="bg-white">
-      <ul v-for="work in infos.work" :key="work.company">
+      <ul v-for="work in aboutInfos.work" :key="work.company">
         <li class="p-4 flex flex-col gap-2 bg-background rounded shadow-md">
           <p class="text-xl font-bold">{{ work.company }}</p>
           <p class="text-gray-700">{{ work.period }}</p>
@@ -78,48 +78,25 @@
         </li>
       </ul>
     </Section>
-    <div class="flex px-4 py-12 bg-background">
-      <SectionHeader title="Projects" bgColor="bg-primary" text-size="text-lg" />
-    </div>
+    <Section text-size="text-2xl" bg-color="bg-primary" section-title="Projects" bg-color-section="bg-background">
+
+    </Section>
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
 
 import Section from "~/components/Section.vue";
-
-interface Infos {
-  general: Array<{ icon: string; info: string }>;
-  education: Array<{
-    program: string;
-    institution: string;
-    period: string;
-    grade?: string | undefined;
-    details: string[];
-  }>;
-  work: Array<{
-    position: string;
-    company: string;
-    period: string;
-    details: string[];
-  }>;
-  skills: Array<{
-    name: string;
-    icon: string;
-    url: string;
-  }>;
-  contact: Array<{
-    platform: string;
-    icon: string;
-    url: string;
-  }>;
-}
+import { About, Project } from "~/helper/types";
 
 import LiteYouTubeEmbed from 'vue-lite-youtube-embed'
 import 'vue-lite-youtube-embed/style.css'
 
-import infosJson from '~/helper/about.json';
-const infos: Infos = infosJson;
+import aboutJson from '~/helper/about.json';
+import projectJson from '~/helper/projects.json';
+
+const aboutInfos: About = aboutJson;
+const projectInfos: Project[] = projectJson;
 
 const { data: latestCommit } = useFetch("/api/github/latestCommit");
 </script>
