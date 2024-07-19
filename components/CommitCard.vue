@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-8 p-4 rounded-md shadow-md bg-secondary max-w-xl">
+  <div class="flex flex-col gap-8 p-4 rounded-md shadow-md w-1/3" :class="bgColor">
     <div class="flex justify-between gap-4">
       <div class="flex gap-4">
         <div class="avatar">
@@ -61,5 +61,6 @@ defineProps<{
   committerName?: string;
   commitDate?: string;
   committerUrl?: string;
+  bgColor: string
 }>();
 </script>

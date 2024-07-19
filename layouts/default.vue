@@ -56,7 +56,6 @@ const isActive = ref(false);
 
 function toggleMenu() {
   isActive.value = !isActive.value;
-  console.log(isActive.value);
 }
 </script>
 
