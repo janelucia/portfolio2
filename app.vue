@@ -29,7 +29,7 @@
             :committer-url="latestCommit.committer.html_url"
         />
         <div class="flex gap-4 self-end">
-          <a v-for="contact in contactInfos" :key="contact.platform" :href="contact.url">
+          <a v-for="contact in contactInfos" :key="contact" :href="contact.url">
             <Icon :name="contact.icon" class="text-2xl"/>
           </a>
         </div>
