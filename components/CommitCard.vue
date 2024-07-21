@@ -3,8 +3,8 @@
     <div class="flex justify-between gap-4">
       <div class="flex gap-4">
         <div class="avatar">
-          <div class="w-12 rounded-full">
-            <NuxtImg :src="avatarUrl" />
+          <div class="w-12">
+            <NuxtPicture format="webp" :src="avatarUrl" :img-attrs="{ class: 'rounded-full' }" />
           </div>
         </div>
         <div>
