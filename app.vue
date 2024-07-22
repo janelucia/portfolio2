@@ -9,7 +9,7 @@
           <div class="h-full flex flex-col gap-2">
             <h1 class="text-4xl md:text-6xl text-text-light">I am Jane,</h1>
             <p class="md:text-lg">
-              a frontend developer based in Kiel, currently doing my studies at the University of Applied Sciences Kiel.
+              a frontend developer based in Kiel, currently doing my computer science studies at the University of Applied Sciences Kiel.
               <br>
               As a former Sociology and educational science major I am particularly interested in the intersection of
               technology and society.
