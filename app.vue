@@ -31,23 +31,26 @@
     </div>
     <Section text-size="text-2xl md:text-4xl" bg-color="bg-accent" section-title="About Me" bg-color-section="bg-background">
       <div class="flex flex-col gap-8 md:flex-row md:justify-between">
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 md:w-1/2">
           <ul v-for="info in generalInfos" :key="info.icon">
             <li class="flex gap-2 items-center text-lg"> {{info.icon}} <p>{{ info.info }}</p></li>
           </ul>
         </div>
-        <CommitCard
-            :avatar-url="latestCommit.committer.avatar_url"
-            :repository-name="latestCommit.repository.name"
-            :owner-name="latestCommit.repository.owner.name"
-            :commit-message="latestCommit.message"
-            :committer-name="latestCommit.committer.name"
-            :commit-date="latestCommit.date"
-            :repository-url="latestCommit.repository.html_url"
-            :owner-url="latestCommit.repository.owner.html_url"
-            :committer-url="latestCommit.committer.html_url"
-            bg-color="bg-accent"
-        />
+        <div class="flex flex-col gap-2 w-full md:w-1/2">
+          <p>The last commit I did and to which repository:</p>
+          <CommitCard
+              :avatar-url="latestCommit.committer.avatar_url"
+              :repository-name="latestCommit.repository.name"
+              :owner-name="latestCommit.repository.owner.name"
+              :commit-message="latestCommit.message"
+              :committer-name="latestCommit.committer.name"
+              :commit-date="latestCommit.date"
+              :repository-url="latestCommit.repository.html_url"
+              :owner-url="latestCommit.repository.owner.html_url"
+              :committer-url="latestCommit.committer.html_url"
+              bg-color="bg-accent"
+          />
+        </div>
       </div>
       <p class="text-lg">I had the pleasure to speak on behalf of my studies: computer science at the University of Applied Sciences.</p>
       <LiteYouTubeEmbed id="sR6hhkqADF0" title="Mein Studium an der FH Kiel: Informatik" muted></LiteYouTubeEmbed>

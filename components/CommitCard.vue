@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-8 p-4 rounded-md shadow-md w-1/3" :class="bgColor">
+  <div class="flex flex-col gap-8 p-4 rounded-md shadow-md" :class="bgColor">
     <div class="flex justify-between gap-4">
       <div class="flex gap-4">
         <div class="avatar">
