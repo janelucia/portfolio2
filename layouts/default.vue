@@ -10,11 +10,7 @@
       >
         <div class="flex flex-col gap-8 items-center">
           <!-- Mobile menu items -->
-          <a href="#" class="menu-item">Home</a>
-          <a href="#" class="menu-item">About Me</a>
-          <a href="#" class="menu-item">Projects</a>
-          <a href="#" class="menu-item">Blog</a>
-          <a href="#" class="menu-item">Get in touch</a>
+          <NuxtLink v-for="nav in navigation" :href="nav.url" class="menu-item" @click="toggleMenu">{{nav.name}}</NuxtLink>
         </div>
         <div class="flex gap-4">
           <a v-for="contact in contactInfo" :key="contact" :href="contact.url">
@@ -24,11 +20,7 @@
       </nav>
       <nav class="hidden lg:flex justify-evenly w-full" aria-label="desktop menu">
         <!-- Desktop menu items -->
-        <a href="#" class="menu-item">Home</a>
-        <a href="#" class="menu-item">About Me</a>
-        <a href="#" class="menu-item">Projects</a>
-        <a href="#" class="menu-item">Blog</a>
-        <a href="#" class="menu-item">Get in touch</a>
+        <NuxtLink v-for="nav in navigation" :href="nav.url" class="menu-item">{{nav.name}}</NuxtLink>
       </nav>
     </header>
     <main class="flex flex-col gap-4 items-center top-16">
@@ -55,6 +47,14 @@ const contactInfo = aboutJson.contact;
 
 const isActive = ref(false);
 const isScrolled = ref(false);
+
+const navigation = [
+  { name: 'Hello', url: '#hello' },
+  { name: 'About Me', url: '#about-me' },
+  { name: 'Projects', url: '#projects' },
+  // { name: 'Blog', url: '#' },
+  { name: 'Get in touch', url: '#contact' },
+];
 
 function checkScroll() {
   isScrolled.value = window.scrollY > 0;

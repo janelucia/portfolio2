@@ -1,57 +1,54 @@
 <template>
   <NuxtLayout>
-    <div class="flex flex-col md:flex-row-reverse w-full gap-4 p-4 items-center md:items-start lg:max-w-screen-xl">
-      <div class="w-2/3 md:w-1/3">
-        <NuxtPicture format="webp" src="/images/Jane.jpg" :img-attrs="{ class: 'rounded' }"/>
-      </div>
+    <div class="flex flex-col w-full gap-4 p-4 items-center md:items-start lg:max-w-screen-xl xl:px-0">
       <div class="w-full flex flex-col gap-4">
-          <SectionHeader title="Hello" bgColor="bg-secondary" text-size="text-2xl md:text-4xl" />
-          <div class="h-full flex flex-col gap-2">
-            <h1 class="text-4xl md:text-6xl text-text-light">I am Jane,</h1>
-            <p class="md:text-lg">
-              a frontend developer based in Kiel, currently doing my computer science studies at the University of Applied Sciences Kiel.
+        <SectionHeader title="Hello" bgColor="bg-accent" text-size="text-2xl md:text-4xl" id="hello" />
+        <div class="flex flex-col-reverse items-center gap-6 md:flex-row">
+          <div class="flex flex-col gap-4 justify-between lg:flex-1 h-full">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl text-text-light">I am Jane,</h1>
+            <p class="md:text-lg leading-relaxed">
+              a 27 y/o frontend developer based in Kiel, currently doing my computer science studies at the University of Applied Sciences Kiel.
               <br>
               As a former Sociology and educational science major I am particularly interested in the intersection of
               technology and society.
               <br>
-              Helping building a digital world which suits the needs of everyone is my main goal.
+              Helping build a digital world which suits the needs of everyone is my main goal.
             </p>
-            <div class="flex gap-8 self-end sm:self-start items-center w-full">
-              <NuxtLink to="#" class="px-4 py-2 bg-primary rounded hover:bg-secondary shadow-sm md:text-lg">
-                Contact Me
-              </NuxtLink>
-              <div class="flex gap-4">
-                <a v-for="contact in contactInfos" :key="contact" :href="contact.url">
-                  <Icon :name="contact.icon" class="text-2xl"/>
-                </a>
+            <div class="w-full flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-end">
+              <div class="flex flex-col gap-2 w-full lg:w-1/2">
+                <p class="md:text-lg">Here is the last thing I did:</p>
+                <CommitCard
+                    :avatar-url="latestCommit.committer.avatar_url"
+                    :repository-name="latestCommit.repository.name"
+                    :owner-name="latestCommit.repository.owner.name"
+                    :commit-message="latestCommit.message"
+                    :committer-name="latestCommit.committer.name"
+                    :commit-date="latestCommit.date"
+                    :repository-url="latestCommit.repository.html_url"
+                    :owner-url="latestCommit.repository.owner.html_url"
+                    :committer-url="latestCommit.committer.html_url"
+                    bg-color="bg-accent"
+                />
+              </div>
+              <div class="flex flex-col md:flex-row gap-4 items-center">
+                <NuxtLink to="#" class="px-4 py-2 bg-accent rounded hover:bg-primary shadow-sm md:text-lg">
+                  Contact Me
+                </NuxtLink>
+                <div class="flex gap-4">
+                  <a v-for="contact in contactInfos" :key="contact" :href="contact.url">
+                    <Icon :name="contact.icon" class="text-2xl"/>
+                  </a>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="w-full sm:w-1/2 md:w-full lg:w-1/3 lg:max-w-sm flex justify-center md:justify-start">
+            <NuxtPicture format="webp" src="/images/Jane.jpg" :img-attrs="{ class: 'rounded w-full h-auto md:h-full object-cover' }"/>
+          </div>
         </div>
       </div>
     </div>
-    <Section text-size="text-2xl md:text-4xl" bg-color="bg-accent" section-title="About Me" bg-color-section="bg-background">
-      <div class="flex flex-col gap-8 md:flex-row md:justify-between">
-        <div class="flex flex-col gap-4 md:w-1/2">
-          <ul v-for="info in generalInfos" :key="info.icon">
-            <li class="flex gap-2 items-center text-lg"> {{info.icon}} <p>{{ info.info }}</p></li>
-          </ul>
-        </div>
-        <div class="flex flex-col gap-2 w-full md:w-1/2">
-          <p>The last commit I did and to which repository:</p>
-          <CommitCard
-              :avatar-url="latestCommit.committer.avatar_url"
-              :repository-name="latestCommit.repository.name"
-              :owner-name="latestCommit.repository.owner.name"
-              :commit-message="latestCommit.message"
-              :committer-name="latestCommit.committer.name"
-              :commit-date="latestCommit.date"
-              :repository-url="latestCommit.repository.html_url"
-              :owner-url="latestCommit.repository.owner.html_url"
-              :committer-url="latestCommit.committer.html_url"
-              bg-color="bg-accent"
-          />
-        </div>
-      </div>
+    <Section text-size="text-2xl md:text-4xl" bg-color="bg-accent" section-title="About Me" bg-color-section="bg-background" id="about-me">
       <p class="text-lg">I had the pleasure to speak on behalf of my studies: computer science at the University of Applied Sciences.</p>
       <LiteYouTubeEmbed id="sR6hhkqADF0" title="Mein Studium an der FH Kiel: Informatik" muted></LiteYouTubeEmbed>
     </Section>
@@ -82,7 +79,7 @@
           </Card>
       </ul>
     </Section>
-    <Section text-size="text-2xl md:text-4xl" bg-color="bg-primary" section-title="Projects" bg-color-section="bg-background">
+    <Section text-size="text-2xl md:text-4xl" bg-color="bg-primary" section-title="Projects" bg-color-section="bg-background" id="projects">
       <ul v-for="project in projectInfos" :key="project.name">
         <li>
           <Card :title="project.name" :additional-information="project.currentState" :image="project.image" bg-card-color="bg-white">
@@ -99,7 +96,7 @@
         </li>
     </ul>
     </Section>
-    <Section text-size="text-2xl md:text-4xl" bg-color="bg-secondary" section-title="Contact" bg-color-section="bg-white">
+    <Section text-size="text-2xl md:text-4xl" bg-color="bg-secondary" section-title="Contact" bg-color-section="bg-white" id="contact">
       <div class="flex flex-col gap-4">
         <h3 class="font-bold text-4xl">Let's create together</h3>
         <p class="text-lg md:text-xl">
