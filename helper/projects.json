@@ -4,7 +4,7 @@
       "subTitle": "Personal Project with ",
       "currentState": "in progress",
       "description": "This is the second rendition of my university project ultimateTicTacToe. I wanted to do it with Nuxt3. The game is hosted on vercel.",
-      "image": "./images/tictacthetoe.png",
+      "image": "/images/tictacthetoe.png",
       "githubUrl": "https://github.com/janelucia/tictacthetoe",
       "liveUrl": "https://tictacthetoe.vercel.app/info"
     },

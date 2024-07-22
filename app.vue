@@ -2,7 +2,7 @@
   <NuxtLayout>
     <div class="flex flex-col md:flex-row-reverse w-full gap-4 p-4 items-center md:items-start lg:max-w-screen-xl">
       <div class="w-2/3 md:w-1/3">
-        <NuxtPicture format="webp" src="./images/Jane.jpg" :img-attrs="{ class: 'rounded' }"/>
+        <NuxtPicture format="webp" src="/images/Jane.jpg" :img-attrs="{ class: 'rounded' }"/>
       </div>
       <div class="w-full flex flex-col gap-4">
           <SectionHeader title="Hello" bgColor="bg-secondary" text-size="text-2xl md:text-4xl" />
