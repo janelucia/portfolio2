@@ -6,7 +6,8 @@
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-      <nav v-if="isActive" class="fixed bg-white flex flex-col items-center justify-evenly top-16 left-0 w-full h-full p-4" aria-label="mobile menu">
+      <nav v-if="isActive" class="fixed bg-white flex flex-col items-center justify-evenly top-16 left-0 w-full h-screen p-4 z-50" aria-label="mobile menu"
+      >
         <div class="flex flex-col gap-8 items-center">
           <!-- Mobile menu items -->
           <a href="#" class="menu-item">Home</a>
@@ -67,16 +68,25 @@ function toggleMenu() {
   isActive.value = !isActive.value;
 }
 
+watch(isActive, (value) => {
+  if (value) {
+    document.body.classList.add('no-scroll');
+  } else {
+    document.body.classList.remove('no-scroll');
+  }
+});
+
 onMounted(() => {
   window.addEventListener('scroll', checkScroll);
 });
 
 onUnmounted(() => {
   window.removeEventListener('scroll', checkScroll);
+  document.body.classList.remove('no-scroll');
 });
 </script>
 
-<style scoped>
+<style>
 .hamburger {
   @apply cursor-pointer lg:hidden flex flex-col items-end gap-1 z-10;
 }
@@ -108,5 +118,9 @@ onUnmounted(() => {
 
 .menu-item {
   @apply text-text-light text-4xl lg:text-xl no-underline;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 </style>
