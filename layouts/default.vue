@@ -1,5 +1,5 @@
 <template>
-    <header class="flex bg-white w-full z-60 h-16 justify-between items-center p-4">
+    <header class="flex w-full z-60 h-16 justify-between items-center p-4" :class="headerClass">
       <p class="text-3xl font-bold text-text-light">{JS}</p>
       <div @click="toggleMenu" class="hamburger" :class="{ change: isActive }">
         <div class="bar1"></div>
@@ -53,10 +53,27 @@ import aboutJson from '~/helper/about.json';
 const contactInfo = aboutJson.contact;
 
 const isActive = ref(false);
+const isScrolled = ref(false);
+
+function checkScroll() {
+  isScrolled.value = window.scrollY > 0;
+}
+
+const headerClass = computed(() => {
+  return isScrolled.value ? 'fixed top-0 z-50 w-full bg-white shadow' : 'relative bg-transparent';
+});
 
 function toggleMenu() {
   isActive.value = !isActive.value;
 }
+
+onMounted(() => {
+  window.addEventListener('scroll', checkScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', checkScroll);
+});
 </script>
 
 <style scoped>
