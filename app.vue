@@ -63,7 +63,7 @@
     <Section text-size="text-lg md:text-2xl" bg-color="bg-accent" section-title="Education" bg-color-section="bg-background">
       <ul v-for="education in educationInfos" :key="education.program">
           <Card :title="education.institution" :additional-information="education.period" :subtitle="education.program" bg-card-color="bg-white">
-            <p v-if="education.grade" class="text-gray-700" > (Current) Grade: {{ education.grade }} </p>
+            <p v-if="education.grade" class="text-gray-700" > {{ education.grade }} </p>
             <ul class="text-gray-700 list-disc list-inside" v-for="detail in education.details">
               <li>{{ detail }}</li>
             </ul>
