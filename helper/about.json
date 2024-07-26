@@ -20,7 +20,8 @@
       "period": "2022 - present",
       "grade": "Current Grade: 1.5",
       "details": [
-        "Focus on artificial intelligence"
+        "Focus on artificial intelligence",
+        "Numerous projects with different programming languages. One of which will be featured in the projects section."
       ]
     },
     {
@@ -28,7 +29,9 @@
       "institution": "opencampus",
       "period": "January - July 2022",
       "details": [
-        "Inverted classroom model: learning through videos and asking questions in 'class'"
+        "Inverted classroom model: learning through videos and asking questions in 'class'",
+        "Project 1: A website for a fictional coffee company company with HTML, CSS and JS",
+        "Project 2: A fitness app with React, Tailwind CSS and Hygraph"
       ]
     },
     {
@@ -38,7 +41,7 @@
       "grade": "Grade: 1.5",
       "details": [
         "Focus on organisational sociology",
-        "Bachelor thesis on the topic of New Work"
+        "Bachelor thesis on the topic of New Work. Comparing the concept of New Work within the company OTTO and the company Google portrayed in YouTube videos."
       ]
     }
   ],
@@ -47,13 +50,18 @@
       "position": "Working Student in Software Development",
       "company": "OTTO",
       "period": "Feb 2024 - today",
-      "details": []
+      "details": [
+        "Working on different internal projects with primarily React"
+      ]
     },
     {
       "position": "Working Student in Software Development",
       "company": "GEPROG",
       "period": "Feb 2022 - 2024",
-      "details": []
+      "details": [
+        "Working on different projects with primarily Vue.js and Nuxt 3",
+        "Opportunity to write New Work posts for the company"
+      ]
     }
   ],
   "skills": [
