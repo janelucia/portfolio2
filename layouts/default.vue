@@ -84,7 +84,7 @@ onUnmounted(() => {
 });
 </script>
 
-<style scoped>
+<style>
 .hamburger {
   @apply cursor-pointer lg:hidden flex flex-col items-end gap-1 z-10;
 }
