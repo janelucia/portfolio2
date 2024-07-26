@@ -8,9 +8,9 @@
       </div>
       <nav v-if="isActive" class="fixed bg-white flex flex-col items-center justify-evenly top-16 left-0 w-full h-screen p-4 z-50" aria-label="mobile menu"
       >
+        <!-- Mobile menu -->
         <div class="flex flex-col gap-8 items-center">
-          <!-- Mobile menu items -->
-          <NuxtLink v-for="nav in navigation" :href="nav.url" class="menu-item" @click="toggleMenu">{{nav.name}}</NuxtLink>
+          <a v-for="nav in navigation" :href="nav.url" class="menu-item" @click="toggleMenu">{{nav.name}}</a>
         </div>
         <div class="flex gap-4">
           <a v-for="contact in contactInfo" :key="contact" :href="contact.url">
@@ -18,15 +18,15 @@
           </a>
         </div>
       </nav>
+      <!-- Desktop menu -->
       <nav class="hidden lg:flex justify-evenly w-full" aria-label="desktop menu">
-        <!-- Desktop menu items -->
-        <NuxtLink v-for="nav in navigation" :href="nav.url" class="menu-item">{{nav.name}}</NuxtLink>
+        <a v-for="nav in navigation" :href="nav.url" class="menu-item">{{nav.name}}</a>
       </nav>
     </header>
     <main class="flex flex-col gap-4 items-center top-16">
       <slot />
     </main>
-    <footer class="p-4 flex items-center justify-between">
+    <footer class="p-4 flex items-center justify-between bg-background">
       <p class="text-3xl font-bold text-text-light">{JS}</p>
       <ul class="flex gap-4">
         <li v-for="contact in contactInfo" :key="contact.icon">
@@ -50,7 +50,6 @@ const isScrolled = ref(false);
 
 const navigation = [
   { name: 'Hello', url: '#hello' },
-  { name: 'About Me', url: '#about-me' },
   { name: 'Projects', url: '#projects' },
   // { name: 'Blog', url: '#' },
   { name: 'Get in touch', url: '#contact' },

@@ -58,21 +58,6 @@
   ],
   "skills": [
     {
-      "name": "HTML",
-      "icon": "vscode-icons:file-type-html",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
-    },
-    {
-      "name": "CSS",
-      "icon": "vscode-icons:file-type-css",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-    },
-    {
-      "name": "Tailwind CSS",
-      "icon": "vscode-icons:file-type-tailwind",
-      "url": "https://tailwindcss.com/docs"
-    },
-    {
       "name": "JavaScript",
       "icon": "skill-icons:javascript",
       "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
@@ -98,24 +83,29 @@
       "url": "https://v3.nuxtjs.org/docs/get-started/installation"
     },
     {
+      "name": "HTML",
+      "icon": "vscode-icons:file-type-html",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    },
+    {
+      "name": "CSS",
+      "icon": "vscode-icons:file-type-css",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "vscode-icons:file-type-tailwind",
+      "url": "https://tailwindcss.com/docs"
+    },
+    {
       "name": "Flutter",
       "icon": "vscode-icons:file-type-flutter",
       "url": "https://flutter.dev/docs"
     },
     {
-      "name": "C",
-      "icon": "devicon:c",
-      "url": "https://www.learn-c.org/"
-    },
-    {
       "name": "C++",
       "icon": "vscode-icons:file-type-cpp3",
       "url": "https://www.cplusplus.com/doc/"
-    },
-    {
-      "name": "Java",
-      "icon": "vscode-icons:file-type-java",
-      "url": "https://docs.oracle.com/en/java/"
     },
     {
       "name": "Figma",
