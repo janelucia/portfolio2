@@ -6,8 +6,7 @@
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-      <nav v-if="isActive" class="fixed bg-white flex flex-col items-center justify-evenly top-16 left-0 w-full h-screen p-4 z-50" aria-label="mobile menu"
-      >
+      <nav :class="['fixed bg-white flex flex-col items-center justify-evenly top-16 right-0 w-full h-screen p-4 z-50 transition-transform duration-500 ease-in-out', { 'translate-x-0': isActive, 'translate-x-full': !isActive }]" aria-label="mobile menu">
         <!-- Mobile menu -->
         <div class="flex flex-col gap-8 items-center">
           <a v-for="nav in navigation" :href="nav.url" class="menu-item" @click="toggleMenu">{{nav.name}}</a>
@@ -85,7 +84,7 @@ onUnmounted(() => {
 });
 </script>
 
-<style>
+<style scoped>
 .hamburger {
   @apply cursor-pointer lg:hidden flex flex-col items-end gap-1 z-10;
 }
@@ -115,11 +114,20 @@ onUnmounted(() => {
   transform: translate(0, -8px) rotate(45deg);
 }
 
-.menu-item {
-  @apply text-text-light text-4xl lg:text-xl no-underline;
-}
-
 .no-scroll {
   overflow: hidden;
+}
+
+.menu-item {
+  @apply text-text-light text-4xl lg:text-xl no-underline relative;
+}
+
+.menu-item::after {
+  @apply absolute w-0 h-0.5 bottom-[-2px] left-[-5%] bg-current transition-all duration-300 ease-in-out;
+  content: '';
+}
+
+.menu-item:hover::after {
+  @apply w-[110%];
 }
 </style>
