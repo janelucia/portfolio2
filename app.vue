@@ -1,6 +1,7 @@
 <template>
+  <div id="hello"></div>
   <NuxtLayout>
-    <div class="flex flex-col w-full gap-4 p-4 items-center md:items-start lg:max-w-screen-xl xl:px-0" id="hello">
+    <div class="flex flex-col w-full gap-4 p-4 items-center md:items-start lg:max-w-screen-xl xl:px-0">
       <div class="w-full flex flex-col gap-4 h-full justify-between">
         <SectionHeader title="Hello" bgColor="bg-accent" text-size="text-2xl md:text-4xl" />
         <div class="flex flex-col-reverse items-center gap-6 md:flex-row">
@@ -89,9 +90,8 @@
             </ul>
           </Card>
       </ul>
-      <div id="projects"></div>
     </Section>
-    <Section text-size="text-2xl md:text-4xl" bg-color="bg-primary" section-title="Projects" bg-color-section="bg-white">
+    <Section text-size="text-2xl md:text-4xl" bg-color="bg-primary" section-title="Projects" bg-color-section="bg-white" anchor-ref="projects">
       <ul v-for="project in projectInfos" :key="project.name">
         <li>
           <Card :title="project.name" :additional-information="project.currentState" :image="project.image" bg-card-color="bg-background">
@@ -107,9 +107,8 @@
           </Card>
         </li>
     </ul>
-      <div id="contact"></div>
     </Section>
-    <Section text-size="text-2xl md:text-4xl" bg-color="bg-secondary" section-title="Contact" bg-color-section="bg-background">
+    <Section text-size="text-2xl md:text-4xl" bg-color="bg-secondary" section-title="Contact" bg-color-section="bg-background" anchor-ref="contact">
       <div class="flex flex-col gap-4">
         <h3 class="font-bold text-4xl">Let's create together</h3>
         <p class="text-lg md:text-xl">

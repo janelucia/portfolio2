@@ -1,5 +1,7 @@
 <template>
-  <div class="w-full flex flex-col items-center" :class="bgColorSection" :id="sectionId">
+  <div v-if="anchorRef" :id="anchorRef" class="h-0 w-full pb-4">
+  </div>
+  <div class="w-full flex flex-col items-center" :class="bgColorSection">
     <div class="px-4 py-12 flex flex-col gap-4 w-full lg:max-w-screen-xl">
       <SectionHeader :title="sectionTitle" :bgColor="bgColor" :text-size="textSize" />
       <slot />
@@ -15,5 +17,6 @@ defineProps<{
   sectionTitle?: string;
   textSize?: string;
   sectionId?: string;
+  anchorRef?: string;
 }>()
 </script>
