@@ -1,56 +1,55 @@
 <template>
-  <div id="hello"></div>
   <NuxtLayout>
-    <div class="flex flex-col w-full gap-4 p-4 items-center md:items-start lg:max-w-screen-xl xl:px-0">
-      <div class="w-full flex flex-col gap-4 h-full justify-between">
-        <SectionHeader title="Hello" bgColor="bg-accent" text-size="text-2xl md:text-4xl" />
-        <div class="flex flex-col-reverse items-center gap-6 md:flex-row">
-          <div class="flex flex-col gap-4 justify-between flex-1 h-full">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl text-text-light">I am Jane,</h1>
-            <p class="md:text-lg leading-relaxed">
-              a 27 y/o frontend developer based in Kiel, currently doing my computer science studies at the University of Applied Sciences Kiel.
-              <br>
-              As a former Sociology and educational science major I am particularly interested in the intersection of
-              technology and society.
-              <br>
-              Helping build a digital world which suits the needs of everyone is my main goal.
-            </p>
-            <div class="w-full flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-end">
-              <div class="flex flex-col gap-2 w-full lg:w-1/2">
-                <p class="md:text-lg">Here is the last thing I did:</p>
-                <CommitCard
-                    :avatar-url="latestCommit.committer.avatar_url"
-                    :repository-name="latestCommit.repository.name"
-                    :owner-name="latestCommit.repository.owner.name"
-                    :commit-message="latestCommit.message"
-                    :committer-name="latestCommit.committer.name"
-                    :commit-date="latestCommit.date"
-                    :repository-url="latestCommit.repository.html_url"
-                    :owner-url="latestCommit.repository.owner.html_url"
-                    :committer-url="latestCommit.committer.html_url"
-                    bg-color="bg-accent"
-                />
-              </div>
-              <div class="flex flex-col md:flex-row gap-4 items-center">
-                <NuxtLink to="#" class="px-4 py-2 bg-accent rounded hover:bg-primary shadow-sm md:text-lg">
-                  Contact Me
-                </NuxtLink>
-                <div class="flex gap-4">
-                  <a v-for="contact in contactInfos" :key="contact" :href="contact.url">
-                    <Icon :name="contact.icon" class="text-2xl"/>
-                  </a>
-                </div>
+    <Section bg-color-section="bg-white" section-title="Hello" bg-color="bg-accent" text-size="text-2xl md:text-4xl" anchor-ref="hello" padding-t-b="pt-0">
+      <div class="flex flex-col-reverse items-center gap-6 md:flex-row">
+        <div class="flex flex-col gap-4 justify-between flex-1 h-full">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl text-text-light">I am Jane,</h1>
+          <p class="md:text-lg leading-relaxed">
+            a 27 y/o frontend developer based in Kiel, currently doing my computer science studies at the University of Applied Sciences Kiel.
+            <br>
+            As a former Sociology and educational science major I am particularly interested in the intersection of
+            technology and society.
+            <br>
+            Helping build a digital world which suits the needs of everyone is my main goal.
+          </p>
+          <div class="w-full flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-end">
+            <div class="flex flex-col gap-2 w-full lg:w-1/2">
+              <p class="md:text-lg">Here is the last thing I did:</p>
+              <CommitCard
+                  :avatar-url="latestCommit.committer.avatar_url"
+                  :repository-name="latestCommit.repository.name"
+                  :owner-name="latestCommit.repository.owner.name"
+                  :commit-message="latestCommit.message"
+                  :committer-name="latestCommit.committer.name"
+                  :commit-date="latestCommit.date"
+                  :repository-url="latestCommit.repository.html_url"
+                  :owner-url="latestCommit.repository.owner.html_url"
+                  :committer-url="latestCommit.committer.html_url"
+                  bg-color="bg-accent"
+              />
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 items-center">
+              <NuxtLink to="#" class="px-4 py-2 bg-accent rounded hover:bg-primary shadow-sm md:text-lg">
+                Contact Me
+              </NuxtLink>
+              <div class="flex gap-4">
+                <a v-for="contact in contactInfos" :key="contact" :href="contact.url">
+                  <Icon :name="contact.icon" class="text-2xl"/>
+                </a>
               </div>
             </div>
           </div>
-          <div class="w-full sm:w-1/2 md:w-full lg:w-1/3 lg:max-w-sm flex justify-center md:justify-start">
-            <NuxtPicture format="webp" src="/images/Jane.jpg" :img-attrs="{ class: 'rounded w-full h-auto md:h-full object-cover' }"/>
-          </div>
+        </div>
+        <div class="w-full sm:w-1/2 lg:w-1/3 lg:max-w-sm flex justify-center md:justify-start">
+          <NuxtPicture format="webp" src="/images/Jane.jpg" :img-attrs="{ class: 'rounded w-full h-auto md:h-full object-cover' }"/>
         </div>
       </div>
-    </div>
+      <div v-if="!isScrolled" class="w-full flex justify-center absolute bottom-0 left-0 lg:hidden">
+        <Icon class="text-5xl bg-white rounded-full animate-bounce"  name="bi:arrow-down-short"/>
+      </div>
+    </Section>
     <Section text-size="text-lg md:text-2xl" bg-color="bg-accent" section-title="Skills" bg-color-section="bg-background">
-      <div class="flex flex-wrap gap-4 justify-center md:justify-between">
+    <div class="flex flex-wrap gap-4 justify-center md:justify-between">
         <a v-for="skill in skillInfos" :key="skill.name" :href="skill.url" class="flex flex-col items-center gap-2 w-1/3 md:w-1/5 cursor-pointer" target="_blank">
           <div class="hover:bg-accent rounded p-4 flex flex-col items-center">
             <Icon v-if="skill.icon" :name="skill.icon" alt="Logo" class="w-16 h-16" />
@@ -109,14 +108,16 @@
     </ul>
     </Section>
     <Section text-size="text-2xl md:text-4xl" bg-color="bg-secondary" section-title="Contact" bg-color-section="bg-background" anchor-ref="contact">
-      <div class="flex flex-col gap-4">
-        <h3 class="font-bold text-4xl">Let's create together</h3>
-        <p class="text-lg md:text-xl">
-          I am always open for new projects and collaborations.
-          <br>
-          If you have an idea or a project in mind, feel free to contact me.
-        </p>
-        <div class="flex items-center justify-center w-full">
+      <div class="flex flex-col gap-4 md:flex-row items-center md:items-end md:justify-between w-full">
+        <div class="flex flex-col w-full gap-4">
+          <h3 class="font-bold text-4xl">Let's create together</h3>
+          <p class="text-lg md:text-xl">
+            I am always open for new projects and collaborations.
+            <br>
+            If you have an idea or a project in mind, feel free to contact me.
+          </p>
+        </div>
+        <div>
           <a :href="`mailto: ${contactInfos.email.url}`" class="text-lg md:text-lg" >
             <button class="px-4 py-2 bg-secondary rounded shadow-sm">
               janeluciaschoenfeld@gmail.com
@@ -137,6 +138,7 @@ import 'vue-lite-youtube-embed/style.css'
 
 import aboutJson from '~/helper/about.json';
 import projectJson from '~/helper/projects.json';
+import {ref} from "vue";
 
 const skillInfos = aboutJson.skills;
 const educationInfos = aboutJson.education;
@@ -147,6 +149,12 @@ const projectInfos = projectJson;
 const { data: latestCommit } = useFetch("/api/github/latestCommit");
 
 const isTooltipVisible = ref(false);
+const isScrolled = ref(false);
+
+function checkScroll() {
+  const scrollY = window.scrollY;
+  isScrolled.value = scrollY > 0;
+}
 
 function toggleTooltip() {
   isTooltipVisible.value = !isTooltipVisible.value;
@@ -159,4 +167,15 @@ function showTooltip() {
 function hideTooltip() {
   isTooltipVisible.value = false;
 }
+
+onMounted(() => {
+  window.addEventListener('scroll', checkScroll);
+  setTimeout(() => {
+    isScrolled.value = true;
+  }, 5000);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', checkScroll);
+});
 </script>
