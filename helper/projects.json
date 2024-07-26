@@ -13,7 +13,7 @@
       "subTitle": "University Project with vanilla JS, HTML and CSS",
       "currentState": "finished",
       "description": "This is a project I did during my studies at the university. We had to do a game with vanilla JS, HTML and CSS. I decided on the game classic tic tac toe with a twist. Instead of 3x3 you have 9x9 fields. First you have to win the small fields in order to win one big field.",
-      "image": "",
+      "image": "/images/ultimateTicTacToe.png",
       "githubUrl": "https://github.com/janelucia/ultimateTicTacToe",
       "liveUrl": ""
     },
@@ -24,6 +24,6 @@
       "description": "This is a project I did during my studies at the university. We had to do a AirBnB dupe with information from airBnb but our own design.",
       "image": "/images/waFeWo.png",
       "githubUrl": "https://github.com/janelucia/WA-FeWo",
-      "liveUrl": "https://janelucia.github.io/wa-fewo"
+      "liveUrl": ""
     }
 ]
