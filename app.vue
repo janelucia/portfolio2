@@ -29,9 +29,9 @@
               />
             </div>
             <div class="flex flex-col md:flex-row gap-4 items-center">
-              <NuxtLink to="#" class="px-4 py-2 bg-accent rounded hover:bg-primary shadow-sm md:text-lg">
+              <a href="#contact" class="px-4 py-2 bg-accent rounded hover:bg-primary shadow-sm md:text-lg">
                 Contact Me
-              </NuxtLink>
+              </a>
               <div class="flex gap-4">
                 <a v-for="contact in contactInfos" :key="contact" :href="contact.url">
                   <Icon :name="contact.icon" class="text-2xl"/>
