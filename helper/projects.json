@@ -21,9 +21,9 @@
       "name": "WA-FeWo",
       "subTitle": "University Project with vanilla JS, HTML and CSS",
       "currentState": "finished",
-      "description": "This is a project I did during my studies at the university. We had to do a airBnb dupe with information from airBnb but our own design.",
-      "image": "",
+      "description": "This is a project I did during my studies at the university. We had to do a AirBnB dupe with information from airBnb but our own design.",
+      "image": "/images/waFeWo.png",
       "githubUrl": "https://github.com/janelucia/WA-FeWo",
-      "liveUrl": ""
+      "liveUrl": "https://janelucia.github.io/wa-fewo"
     }
 ]
