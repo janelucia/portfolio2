@@ -29,7 +29,7 @@
       <p class="text-3xl font-bold text-text-light">{JS}</p>
       <ul class="flex gap-4">
         <li v-for="contact in contactInfo" :key="contact.icon">
-          <a :href="contact.url">
+          <a :href="contact.url" target="_blank">
             <Icon :name="contact.icon" class="text-2xl"/>
           </a>
         </li>
