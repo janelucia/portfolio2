@@ -2,10 +2,10 @@
   <div class="flex flex-col gap-8 p-4 rounded-md shadow-md" :class="bgColor">
     <div class="flex justify-between gap-4">
       <div class="flex gap-4">
-        <div class="avatar">
-          <div class="w-12">
-            <NuxtPicture format="webp" :src="avatarUrl" :img-attrs="{ class: 'rounded-full' }" />
-          </div>
+        <div class="avatar w-12">
+            <a :href="committerUrl">
+              <NuxtPicture format="webp" :src="avatarUrl" :img-attrs="{ class: 'rounded-full' }" />
+            </a>
         </div>
         <div>
           <a
