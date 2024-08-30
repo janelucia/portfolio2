@@ -23,6 +23,7 @@ export default defineEventHandler(async (event) => {
     return {
         message: latestCommit.commit.message,
         date: latestCommit.commit.committer.date,
+        html_url: latestCommit.html_url,
         committer: {
             name: latestCommit.committer.login,
             avatar_url: latestCommit.committer.avatar_url,

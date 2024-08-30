@@ -25,6 +25,7 @@
                   :repository-url="latestCommit.repository.html_url"
                   :owner-url="latestCommit.repository.owner.html_url"
                   :committer-url="latestCommit.committer.html_url"
+                  :commit-url="latestCommit.html_url"
                   bg-color="bg-accent"
               />
             </div>

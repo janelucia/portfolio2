@@ -1,5 +1,5 @@
 export type Commit = {
-    sha: string;
+    html_url: string;
     commit: {
         message: string;
         committer: {
@@ -23,17 +23,4 @@ export type Commit = {
 
 export type Commits = {
     items: Commit[];
-};
-
-export type Repo = {
-    id: number;
-    owner: {
-        avatar_url: string;
-        login: string;
-        html_url: string;
-    };
-    name: string;
-    updated_at: string;
-    html_url: string;
-    homepage: string;
 };

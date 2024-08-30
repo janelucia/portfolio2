@@ -11,14 +11,14 @@
           <a
               :href="repositoryUrl"
               target="_blank"
-              class="cursor-pointer hover:text-primary"
+              class="cursor-pointer hover:text-text-dark"
           >
             <p class="font-bold">{{ repositoryName }}</p>
           </a>
           <a
               :href="ownerUrl"
               target="_blank"
-              class="cursor-pointer hover:text-primary"
+              class="cursor-pointer hover:text-text-dark"
           >
             <p>{{ ownerName }}</p>
           </a>
@@ -29,14 +29,14 @@
       </div>
     </div>
     <div>
-      <p v-if="commitMessage" class="font-bold">
+      <a v-if="commitMessage" :href="commitUrl" target="_blank" class="font-bold hover:text-text-dark cursor-pointer">
         {{ commitMessage }}
-      </p>
+      </a>
       <a
           v-if="committerUrl"
           :href="committerUrl"
           target="_blank"
-          class="cursor-pointer hover:text-primary"
+          class="cursor-pointer hover:text-text-dark"
       >
         <p>{{ committerName }}</p>
       </a>
@@ -60,6 +60,7 @@ defineProps<{
   commitMessage?: string;
   committerName?: string;
   commitDate?: string;
+  commitUrl?: string;
   committerUrl?: string;
   bgColor: string
 }>();
