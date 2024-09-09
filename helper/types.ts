@@ -22,6 +22,7 @@ type Skills = {
     name: string;
     icon: string;
     url: string;
+    description: string;
 };
 
 type Contact = {

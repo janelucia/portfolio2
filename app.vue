@@ -50,11 +50,28 @@
       </div>
     </Section>
     <Section text-size="text-lg md:text-2xl" bg-color="bg-accent" section-title="Skills" bg-color-section="bg-background">
-    <div class="flex flex-wrap gap-4 justify-center md:justify-between">
-        <a v-for="skill in skillInfos" :key="skill.name" :href="skill.url" class="flex flex-col items-center gap-2 w-1/3 md:w-1/5 cursor-pointer" target="_blank">
-          <div class="hover:bg-accent rounded p-4 flex flex-col items-center">
-            <Icon v-if="skill.icon" :name="skill.icon" alt="Logo" class="w-16 h-16" />
+      <div class="flex flex-wrap gap-4 justify-center md:justify-between relative" >
+        <a
+            v-for="skill in skillInfos"
+            :key="skill.name"
+            class="flex flex-col items-center gap-2 w-1/3 md:w-1/5 cursor-pointer"
+        >
+          <div
+              class="hover:bg-accent rounded p-4 flex flex-col items-center"
+              @click.stop="setActiveSkill(skill.name)"
+              @mouseenter="setActiveSkill(skill.name)"
+              @mouseleave="clearActiveSkill"
+          >
+            <Icon
+                v-if="skill.icon"
+                :name="skill.icon"
+                alt="Logo"
+                class="w-16 h-16"
+            />
             {{ skill.name }}
+              <Card v-if="activeSkill === skill.name" :title="skill.name" :icon="skill.icon" :close-icon="clearActiveSkill" bg-card-color="bg-secondary text-text-light rounded shadow-lg z-10 w-full lg:w-1/2 p-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" >
+                {{skill.description}}
+              </Card>
           </div>
         </a>
       </div>
@@ -74,7 +91,7 @@
         <div class="lg:w-1/2">
           <LiteYouTubeEmbed id="sR6hhkqADF0" title="Mein Studium an der FH Kiel: Informatik" muted></LiteYouTubeEmbed>
           <div class="w-full relative flex justify-end">
-            <Icon name="material-symbols:info-outline" class="text-2xl cursor-pointer text-text-light" @click="toggleTooltip" @mouseover="showTooltip" @mouseleave="hideTooltip"/>
+            <Icon name="material-symbols:info-outline" class="text-2xl cursor-pointer text-text-light" @click="toggleTooltip" @mouseover="showTooltip(true)" @mouseleave="showTooltip(false)"/>
             <div v-if="isTooltipVisible" class="absolute top-full mt-2 p-2 bg-secondary text-text-light rounded shadow-lg">
               <p class="text-lg">I had the pleasure to speak on behalf of my studies: computer science at the University of Applied Sciences.</p>
             </div>
@@ -150,6 +167,7 @@ const projectInfos = projectJson;
 const { data: latestCommit } = useFetch("/api/github/latestCommit");
 
 const isTooltipVisible = ref(false);
+const activeSkill = ref('');
 const isScrolled = ref(false);
 
 function checkScroll() {
@@ -161,12 +179,16 @@ function toggleTooltip() {
   isTooltipVisible.value = !isTooltipVisible.value;
 }
 
-function showTooltip() {
-  isTooltipVisible.value = true;
+function setActiveSkill(skillName : string) {
+  activeSkill.value = skillName
 }
 
-function hideTooltip() {
-  isTooltipVisible.value = false;
+function showTooltip(show : boolean) {
+  isTooltipVisible.value = show;
+}
+
+function clearActiveSkill() {
+    activeSkill.value = '';
 }
 
 onMounted(() => {

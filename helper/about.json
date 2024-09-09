@@ -68,42 +68,50 @@
     {
       "name": "TypeScript",
       "icon": "vscode-icons:file-type-typescript-official",
-      "url": "https://www.typescriptlang.org/"
+      "url": "https://www.typescriptlang.org/",
+      "description": "I regularly use TypeScript in both my job and academic work. It's also the language I chose for personal projects, including building this portfolio."
     },
     {
       "name": "Vue.js",
       "icon": "vscode-icons:file-type-vue",
-      "url": "https://vuejs.org/"
+      "url": "https://vuejs.org/",
+      "description": "While working at GEPROG, I gained hands-on experience with Vue.js across several projects, building responsive user interfaces and deepening my understanding of this framework."
     },
     {
       "name": "Nuxt 3",
       "icon": "vscode-icons:file-type-nuxt",
-      "url": "https://nuxt.com/"
+      "url": "https://nuxt.com/",
+      "description": "I worked with Nuxt 3 at GEPROG and also used it to build this portfolio. Additionally, I wrote a blog post exploring its features, which helped me refine my skills."
     },
     {
       "name": "React",
       "icon": "vscode-icons:file-type-reactjs",
-      "url": "https://react.dev/"
+      "url": "https://react.dev/",
+      "description": "At OTTO, I am working on multiple projects with React, building components and user interfaces for web applications. This helped me improve my knowledge of React’s ecosystem and best practices."
     },
     {
       "name": "Tailwind CSS",
       "icon": "vscode-icons:file-type-tailwind",
-      "url": "https://tailwindcss.com/"
+      "url": "https://tailwindcss.com/",
+      "description": "I used Tailwind CSS at both OpenCampus, GEPROG as well as my personal projects to create clean, responsive designs."
     },
     {
       "name": "Flutter",
       "icon": "vscode-icons:file-type-flutter",
-      "url": "https://flutter.dev/"
+      "url": "https://flutter.dev/",
+      "description": "As part of my studies, I used Flutter to build a mobile app that connected people with job opportunities nearby. This project helped me develop skills in mobile app development with a focus on cross-platform solutions."
     },
     {
       "name": "C++",
       "icon": "vscode-icons:file-type-cpp3",
-      "url": "https://cplusplus.com/"
+      "url": "https://cplusplus.com/",
+      "description": "In my studies, I worked with C++ on a project where my team created a human benchmark game. This project allowed me to enhance my programming skills through practical applications and teamwork."
     },
     {
       "name": "Figma",
       "icon": "devicon:figma",
-      "url": "https://www.figma.com/"
+      "url": "https://www.figma.com/",
+      "description": "I’ve used Figma in both academic and work settings for designing user interfaces. It’s been especially useful for planning the layout of this portfolio and other projects."
     }
   ],
   "contact": {
