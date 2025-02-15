@@ -5,7 +5,7 @@
         <div class="flex flex-col gap-4 justify-between flex-1 h-full">
           <h1 class="text-4xl md:text-5xl lg:text-6xl text-text-light">I am Jane,</h1>
           <p class="md:text-lg leading-relaxed">
-            a 27 y/o frontend developer based in Kiel, currently doing my computer science studies at the University of Applied Sciences Kiel.
+            a {{ old() }} y/o frontend developer based in Kiel, currently doing my computer science studies at the University of Applied Sciences Kiel.
             <br>
             As a former Sociology and educational science major I am particularly interested in the intersection of
             technology and society.
@@ -190,6 +190,15 @@ function showTooltip(show : boolean) {
 function clearActiveSkill() {
     activeSkill.value = '';
 }
+
+const old = () => {
+  const currentDate = new Date();
+  let yearOld = currentDate.getFullYear() - 1996;
+  if (currentDate.getMonth() < 11 && currentDate.getDate() < 26) {
+    yearOld -= 1;
+  }
+  return yearOld;
+};
 
 onMounted(() => {
   window.addEventListener('scroll', checkScroll);
