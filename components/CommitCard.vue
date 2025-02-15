@@ -51,17 +51,17 @@
 
 <script setup lang="ts">
 defineProps<{
-  avatarUrl: string;
-  repositoryName: string;
-  ownerName: string;
-  repositoryUrl: string;
-  ownerUrl: string;
-  latestUpdate?: string;
-  commitMessage?: string;
-  committerName?: string;
-  commitDate?: string;
-  commitUrl?: string;
-  committerUrl?: string;
+  avatarUrl: string | undefined;
+  repositoryName: string | undefined;
+  ownerName: string | undefined;
+  repositoryUrl: string | undefined;
+  ownerUrl: string | undefined;
+  latestUpdate?: string | undefined;
+  commitMessage?: string | undefined;
+  committerName?: string | undefined;
+  commitDate?: string | undefined;
+  commitUrl?: string | undefined;
+  committerUrl?: string | undefined;
   bgColor: string
 }>();
 </script>

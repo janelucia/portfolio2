@@ -16,16 +16,16 @@
             <div class="flex flex-col gap-2 w-full lg:w-1/2">
               <p class="md:text-lg">Here is the last thing I did:</p>
               <CommitCard
-                  :avatar-url="latestCommit.committer.avatar_url"
-                  :repository-name="latestCommit.repository.name"
-                  :owner-name="latestCommit.repository.owner.name"
-                  :commit-message="latestCommit.message"
-                  :committer-name="latestCommit.committer.name"
-                  :commit-date="latestCommit.date"
-                  :repository-url="latestCommit.repository.html_url"
-                  :owner-url="latestCommit.repository.owner.html_url"
-                  :committer-url="latestCommit.committer.html_url"
-                  :commit-url="latestCommit.html_url"
+                  :avatar-url="latestCommit?.committer.avatar_url"
+                  :repository-name="latestCommit?.repository.name"
+                  :owner-name="latestCommit?.repository.owner.name"
+                  :commit-message="latestCommit?.message"
+                  :committer-name="latestCommit?.committer.name"
+                  :commit-date="latestCommit?.date"
+                  :repository-url="latestCommit?.repository.html_url"
+                  :owner-url="latestCommit?.repository.owner.html_url"
+                  :committer-url="latestCommit?.committer.html_url"
+                  :commit-url="latestCommit?.html_url"
                   bg-color="bg-accent"
               />
             </div>
