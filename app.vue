@@ -109,7 +109,7 @@
       </ul>
     </Section>
     <Section text-size="text-2xl md:text-4xl" bg-color="bg-primary" section-title="Projects" bg-color-section="bg-white" anchor-ref="projects">
-      <ul v-for="project in projectInfos" :key="project.name">
+      <ul v-for="project in filteredProjects" :key="project.name">
         <li>
           <Card :title="project.name" :additional-information="project.currentState" :image="project.image" bg-card-color="bg-background">
             <p>{{ project.description }}</p>
@@ -190,6 +190,10 @@ function showTooltip(show : boolean) {
 function clearActiveSkill() {
     activeSkill.value = '';
 }
+
+const filteredProjects = computed(() => {
+  return projectInfos.filter(project => project.githubUrl);
+});
 
 const old = () => {
   const currentDate = new Date();
