@@ -3,7 +3,7 @@
     <Section bg-color-section="bg-white" section-title="Hello" bg-color="bg-accent" text-size="text-2xl md:text-4xl" anchor-ref="hello" padding-t-b="pt-0">
       <div class="flex flex-col-reverse items-center gap-6 md:flex-row">
         <div class="flex flex-col gap-4 justify-between flex-1 h-full">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl text-text-light">I am Jane,</h1>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl text-text-light">I am Jane 👋</h1>
           <p class="md:text-lg leading-relaxed">
             a {{ old() }} y/o frontend developer based in Kiel, currently doing my computer science studies at the University of Applied Sciences Kiel.
             <br>
