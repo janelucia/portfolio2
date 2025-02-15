@@ -25,6 +25,14 @@
       ]
     },
     {
+      "program": "European Project Semester",
+      "institution": "Oslo Metropolitan University",
+      "period": "Jan - Jun 2025",
+      "details": [
+        "Project: A host for the AI Lab at the university. The project will be carried out by a team of four students from different countries, each bringing diverse skill sets."
+      ]
+    },
+    {
       "program": "Frontend Developer Program",
       "institution": "opencampus",
       "period": "January - July 2022",
@@ -49,7 +57,7 @@
     {
       "position": "Working Student in Software Development",
       "company": "OTTO",
-      "period": "Feb 2024 - today",
+      "period": "Feb 2024 - Jan 2025",
       "details": [
         "Working on different internal projects with primarily React"
       ]
