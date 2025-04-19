@@ -1,13 +1,22 @@
 [
-    {
-      "name": "tictacthetoe",
-      "subTitle": "Personal Project with Nuxt",
-      "currentState": "in progress",
-      "description": "This is the second rendition of my university project ultimateTicTacToe. I wanted to do it with Nuxt3. The game is hosted on vercel.",
-      "image": "/images/tictacthetoe.png",
-      "githubUrl": "https://github.com/janelucia/tictacthetoe",
-      "liveUrl": ""
-    },
+  {
+    "name": "Semester Scoreboard",
+    "subTitle": "Personal Project with Nuxt",
+    "currentState": "in progress",
+    "description": "This is a personal project that I started to keep track of my university grades. It is built with Nuxt3 and is hosted on Vercel.",
+    "image": "/images/semester-scoreboard.png",
+    "githubUrl": "https://github.com/janelucia/remark",
+    "liveUrl": "https://remark-ten.vercel.app/"
+  },
+  {
+    "name": "tictacthetoe",
+    "subTitle": "Personal Project with Nuxt",
+    "currentState": "in progress",
+    "description": "This is the second rendition of my university project ultimateTicTacToe. I wanted to do it with Nuxt3. The game is hosted on vercel.",
+    "image": "/images/tictacthetoe.png",
+    "githubUrl": "https://github.com/janelucia/tictacthetoe",
+    "liveUrl": ""
+  },
   {
     "name": "Lego-Robo in a Labyrinth",
     "subTitle": "University Project using Kotlin, OSC, and Python",
