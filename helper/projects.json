@@ -1,12 +1,12 @@
 [
   {
-    "name": "Semester Scoreboard",
+    "name": "Grade Trace",
     "subTitle": "Personal Project with Nuxt",
     "currentState": "in progress",
     "description": "This is a personal project that I started to keep track of my university grades. It is built with Nuxt3 and is hosted on Vercel.",
-    "image": "/images/semester-scoreboard.png",
-    "githubUrl": "https://github.com/janelucia/remark",
-    "liveUrl": "https://remark-ten.vercel.app/"
+    "image": "/images/grade-trace.png",
+    "githubUrl": "https://github.com/janelucia/grade-trace",
+    "liveUrl": "https://grade-trace.vercel.app/"
   },
   {
     "name": "tictacthetoe",
