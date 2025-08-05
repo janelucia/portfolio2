@@ -1,5 +1,14 @@
 [
   {
+    "name": "knittly",
+    "subTitle": "Personal Project with Vue and TypeScript",
+    "currentState": "in progress",
+    "description": "A minimalist mobile-first application designed to help knitters track and manage their knitting projects. Features stitch counting, row tracking, and project organization with a clean, mobile-optimized interface built with Vue and TypeScript.",
+    "image": "/images/knittly.png",
+    "githubUrl": "https://github.com/janelucia/knittly",
+    "liveUrl": "https://knittly.vercel.app/"
+  },
+  {
     "name": "Grade Trace",
     "subTitle": "Personal Project with Nuxt",
     "currentState": "in progress",
@@ -15,6 +24,15 @@
     "description": "This is the second rendition of my university project ultimateTicTacToe. I wanted to do it with Nuxt3. The game is hosted on vercel.",
     "image": "/images/tictacthetoe.png",
     "githubUrl": "https://github.com/janelucia/tictacthetoe",
+    "liveUrl": ""
+  },
+  {
+    "name": "AIGenie",
+    "subTitle": "University Project with Vue, Python, and TypeScript",
+    "currentState": "finished",
+    "description": "A mobile web application that serves as a host for the AI Lab of OsloMet University. Features an interactive AI assistant chat interface, information about researchers, research project details, and upcoming events exploration. Developed in a team of four with cross-functional collaboration. I was responsible for the frontend development using Vue and TypeScript",
+    "image": "/images/ai-genie.png",
+    "githubUrl": "https://github.com/janelucia/ai-genie",
     "liveUrl": ""
   },
   {
