@@ -109,21 +109,26 @@
       </ul>
     </Section>
     <Section text-size="text-2xl md:text-4xl" bg-color="bg-primary" section-title="Projects" bg-color-section="bg-white" anchor-ref="projects">
-      <ul v-for="project in filteredProjects" :key="project.name">
-        <li>
-          <Card :title="project.name" :additional-information="project.currentState" :image="project.image" bg-card-color="bg-background">
-            <p>{{ project.description }}</p>
-            <div class="flex items-center justify-end gap-4">
-              <a :href="project.githubUrl" class="text-2xl">
-                <Icon :name="contactInfos.github.icon" />
-              </a>
-              <a v-if="project.liveUrl" class="px-4 py-2 bg-primary rounded hover:bg-accent shadow-sm text-lg md:text-lg" :href="project.liveUrl" target="_blank">
-                Try it out
-              </a>
-            </div>
-          </Card>
-        </li>
-    </ul>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <Card 
+          v-for="project in filteredProjects" 
+          :key="project.name"
+          :title="project.name" 
+          :additional-information="project.currentState" 
+          :image="project.image" 
+          bg-card-color="bg-background"
+        >
+          <p class="mb-4">{{ project.description }}</p>
+          <div class="flex items-center justify-end gap-4">
+            <a :href="project.githubUrl" class="text-2xl hover:text-primary transition-colors">
+              <Icon :name="contactInfos.github.icon" />
+            </a>
+            <a v-if="project.liveUrl" class="px-4 py-2 bg-primary rounded hover:bg-accent shadow-sm text-lg transition-colors" :href="project.liveUrl" target="_blank">
+              Try it out
+            </a>
+          </div>
+        </Card>
+      </div>
     </Section>
     <Section text-size="text-2xl md:text-4xl" bg-color="bg-secondary" section-title="Contact" bg-color-section="bg-background" anchor-ref="contact">
       <div class="flex flex-col gap-4 md:flex-row items-center md:items-end md:justify-between w-full">

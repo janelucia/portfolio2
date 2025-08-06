@@ -1,32 +1,34 @@
 <template>
-  <div class="rounded shadow-sm flex flex-col gap-2 md:flex-row" :class="bgCardColor">
-    <div v-if="image || icon" class="md:w-1/3 flex justify-center items-center overflow-hidden">
+  <div class="flex flex-col h-full rounded shadow-sm" :class="bgCardColor">
+    <div v-if="image || icon" class="w-full">
       <NuxtPicture
-          v-if="image"
-          format="webp"
-          :src="image"
-          :img-attrs="{
-          class: 'w-full h-full object-cover rounded-t md:rounded-tr-none md:rounded-bl md:rounded-tl'
+        v-if="image"
+        format="webp"
+        :src="image"
+        :img-attrs="{
+          class: 'w-full h-48 object-cover rounded-t',
         }"
       />
-      <Icon
-          v-if="icon"
-          :name="icon"
-          class="w-1/2 h-1/2 md:w-2/3 md:h-2/3 lg:w-full lg:h-full"
-      />
+      <div v-if="icon" class="flex items-center justify-center h-48">
+        <Icon :name="icon" class="w-16 h-16" />
+      </div>
       <div v-if="closeIcon" class="lg:hidden">
         <Icon
-            name="eva:close-fill"
-            @click.stop="closeIcon"
-            class="absolute top-2 right-2 hover:text-primary rounded-full w-8 h-8"
+          name="eva:close-fill"
+          @click.stop="closeIcon"
+          class="absolute w-8 h-8 rounded-full top-2 right-2 hover:text-primary"
         />
       </div>
     </div>
-    <div class="p-4 flex flex-col gap-2 flex-1 justify-evenly">
-      <p class="text-xl font-bold md:text-2xl">{{ title }}</p>
-      <p class="text-gray-700 md:text-xl">{{ additionalInformation }}</p>
-      <p v-if="subtitle" class="font-bold md:text-xl">{{ subtitle }}</p>
-      <slot />
+    <div class="flex flex-col justify-between flex-1 gap-2 p-4">
+      <div class="flex flex-col gap-2">
+        <p class="text-xl font-bold md:text-2xl">{{ title }}</p>
+        <p class="text-gray-700 md:text-xl">{{ additionalInformation }}</p>
+        <p v-if="subtitle" class="font-bold md:text-xl">{{ subtitle }}</p>
+      </div>
+      <div class="flex flex-col gap-2 mt-auto">
+        <slot />
+      </div>
     </div>
   </div>
 </template>
@@ -40,5 +42,5 @@ defineProps<{
   image?: string;
   icon?: string;
   closeIcon?: () => void;
-}>()
+}>();
 </script>
