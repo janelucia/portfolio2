@@ -1,31 +1,61 @@
 <template>
   <Section
-    text-size="text-2xl md:text-4xl"
-    bg-color="bg-secondary"
-    section-title="Contact"
-    bg-color-section="bg-background"
+    section-title="Let's create together"
+    section-subtitle="Contact"
+    highlight-word="create"
     anchor-ref="contact"
+    padding-t-b="py-16"
   >
-    <div
-      class="flex flex-col items-center w-full gap-4 md:flex-row md:items-end md:justify-between"
-    >
-      <div class="flex flex-col w-full gap-4">
-        <h3 class="text-4xl font-bold">Let's create together</h3>
-        <p class="text-lg md:text-xl">
-          I am always open for new projects and collaborations.
-          <br />
-          If you have an idea or a project in mind, feel free to contact me.
-        </p>
-      </div>
-      <div>
-        <a
-          :href="`mailto: ${contactInfos.email.url}`"
-          class="text-lg md:text-lg"
-        >
-          <button class="px-4 py-2 rounded shadow-sm bg-secondary">
-            janeluciaschoenfeld@gmail.com
-          </button>
-        </a>
+    <div class="flex flex-col max-w-4xl gap-8 mx-auto">
+      <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-4 text-center">
+          <p class="text-lg leading-relaxed text-gray-600">
+            I am always open for new projects and collaborations.
+            If you have an idea or a project in mind, feel free to contact me.
+          </p>
+        </div>
+        
+        <div class="flex flex-col gap-4">
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <a
+              :href="`https://${contactInfos.linkedin.url}`"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center gap-3 p-6 transition-all duration-300 border border-gray-200 bg-gray-50 rounded-xl hover:shadow-lg hover:border-blue-200 hover:bg-blue-50 group"
+            >
+              <Icon :name="contactInfos.linkedin.icon" class="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform" />
+              <span class="text-lg font-semibold text-gray-900 group-hover:text-blue-700">LinkedIn</span>
+            </a>
+            
+            <a
+              :href="`https://${contactInfos.xing.url}`"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center gap-3 p-6 transition-all duration-300 border border-gray-200 bg-gray-50 rounded-xl hover:shadow-lg hover:border-green-200 hover:bg-green-50 group"
+            >
+              <Icon :name="contactInfos.xing.icon" class="w-8 h-8 text-green-600 group-hover:scale-110 transition-transform" />
+              <span class="text-lg font-semibold text-gray-900 group-hover:text-green-700">Xing</span>
+            </a>
+            
+            <a
+              :href="`https://${contactInfos.github.url}`"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center gap-3 p-6 transition-all duration-300 border border-gray-200 bg-gray-50 rounded-xl hover:shadow-lg hover:border-gray-300 hover:bg-gray-100 group"
+            >
+              <Icon :name="contactInfos.github.icon" class="w-8 h-8 text-gray-900 group-hover:scale-110 transition-transform" />
+              <span class="text-lg font-semibold text-gray-900">GitHub</span>
+            </a>
+            
+            <a
+              :href="`mailto:${contactInfos.email.url}`"
+              class="flex items-center justify-center gap-3 p-6 transition-all duration-300 border border-gray-200 bg-gray-50 rounded-xl hover:shadow-lg hover:border-red-200 hover:bg-red-50 group"
+            >
+              <Icon :name="contactInfos.email.icon" class="w-8 h-8 text-red-600 group-hover:scale-110 transition-transform" />
+              <span class="text-lg font-semibold text-gray-900 group-hover:text-red-700">Email</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </Section>
