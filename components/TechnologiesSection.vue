@@ -74,7 +74,7 @@
               :id="`skill-modal-title-${activeSkill}`"
               class="text-lg font-semibold text-gray-900"
             >
-              {{ skillInfos.find((s) => s.name === activeSkill)?.name }}
+              {{ skillInfos.find((s) => s.name === activeSkill)?.name || '' }}
             </h3>
           </div>
           <p

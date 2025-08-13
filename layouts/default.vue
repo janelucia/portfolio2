@@ -75,9 +75,10 @@ const activeSection = ref("hello");
 
 const navigation = [
   { name: "Hello", url: "#hello", id: "hello" },
+  { name: "Education", url: "#education", id: "education" },
+  { name: "Work", url: "#work", id: "work" },
   { name: "Projects", url: "#projects", id: "projects" },
-  // { name: 'Blog', url: '#' },
-  { name: "Get in touch", url: "#contact", id: "contact" },
+  { name: "Contact", url: "#contact", id: "contact" },
 ];
 
 function checkScroll() {
@@ -118,7 +119,7 @@ function setupAnchorObserver() {
     });
 
     // Determine active navigation section
-    const sectionOrder = ["hello", "projects", "contact"];
+    const sectionOrder = ["hello", "education", "work", "projects", "contact"];
     let newActiveSection = activeSection.value; // Keep current by default
 
     if (visibleAnchors.value.size > 0) {
@@ -144,7 +145,7 @@ function setupAnchorObserver() {
   }, observerConfig);
 
   // Observe all section anchor elements
-  const anchors = ["hello", "projects", "contact"];
+  const anchors = ["hello", "education", "work", "projects", "contact"];
   anchors.forEach((anchorId) => {
     const element = document.getElementById(anchorId);
     if (element) {
