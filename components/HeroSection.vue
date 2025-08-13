@@ -143,7 +143,7 @@
             id="technologies-heading"
             class="text-2xl font-bold text-gray-900"
           >
-            Technologies I work with
+            <span class="text-primary">Technologies</span> I work with
           </h2>
         </div>
 

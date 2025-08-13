@@ -1,9 +1,15 @@
 <template>
   <div v-if="anchorRef" :id="anchorRef" class="h-0 w-full pb-4">
   </div>
-  <div class="w-full flex flex-col items-center" :class="bgColorSection" :data-section="anchorRef">
+  <div class="w-full flex flex-col items-center bg-white" :data-section="anchorRef">
     <div class="px-4 py-12 flex flex-col gap-8 w-full lg:max-w-screen-xl" :class="paddingTB">
-      <SectionHeader :title="sectionTitle" :bgColor="bgColor" :text-size="textSize" />
+      <SectionHeader 
+        :title="sectionTitle" 
+        :bgColor="bgColor" 
+        :text-size="textSize"
+        :subtitle="sectionSubtitle"
+        :highlight-word="highlightWord"
+      />
       <slot />
     </div>
   </div>
@@ -12,12 +18,14 @@
 <script setup lang="ts">
 import SectionHeader from './SectionHeader.vue'
 defineProps<{
-  bgColorSection: string;
+  bgColorSection?: string;
   bgColor?: string;
   sectionTitle?: string;
   textSize?: string;
   sectionId?: string;
   anchorRef?: string;
   paddingTB?: string;
+  sectionSubtitle?: string;
+  highlightWord?: string;
 }>()
 </script>

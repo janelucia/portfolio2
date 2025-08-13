@@ -1,6 +1,7 @@
 <template>
   <NuxtLayout>
     <HeroSection />
+    <AboutSection />
     <EducationSection />
     <WorkSection />
     <ProjectsSection />
