@@ -1,8 +1,8 @@
 <template>
-  <div class="relative" ref="dropdownRef">
+  <div class="relative w-full md:w-fit" ref="dropdownRef">
     <button
       @click="toggleDropdown"
-      class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 transition-all duration-200 bg-white border border-gray-200 rounded-lg hover:border-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+      class="flex items-center justify-between w-full gap-2 px-3 py-2 text-sm font-medium text-gray-700 transition-all duration-200 bg-white border border-gray-200 rounded-lg hover:border-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
       :aria-label="`Current language: ${currentLanguage.name}. Click to change language`"
       :aria-expanded="isOpen">
       <span>{{ currentLanguage.code.toUpperCase() }}</span>
