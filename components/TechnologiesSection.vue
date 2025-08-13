@@ -1,8 +1,8 @@
 <template>
   <Section
-    section-title="Technologies I work with"
-    section-subtitle="Skills"
-    highlight-word="Technologies"
+    :section-title="$t('technologies.title')"
+    :section-subtitle="$t('technologies.subtitle')"
+    :highlight-word="$t('technologies.highlight')"
     anchor-ref="technologies"
     padding-t-b="py-16"
   >
@@ -33,9 +33,7 @@
 
       <div class="flex justify-center text-center">
         <p class="max-w-2xl text-sm text-gray-600">
-          I am always eager to learn new technologies and improve my skills.
-          If you have a project in mind or want to collaborate, feel free to
-          reach out!
+          {{ $t("technologies.description") }}
         </p>
       </div>
     </div>
@@ -74,7 +72,7 @@
               :id="`skill-modal-title-${activeSkill}`"
               class="text-lg font-semibold text-gray-900"
             >
-              {{ skillInfos.find((s) => s.name === activeSkill)?.name || '' }}
+              {{ skillInfos.find((s) => s.name === activeSkill)?.name || "" }}
             </h3>
           </div>
           <p
