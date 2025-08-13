@@ -12,7 +12,7 @@
         :key="project.name"
         class="flex flex-col h-full overflow-hidden transition-shadow duration-300 border border-gray-200 bg-gray-50 rounded-xl hover:shadow-lg">
         <div class="flex-shrink-0 h-48 bg-gray-100">
-          <img
+          <NuxtImg
             v-if="$rt(project.image)"
             :src="$rt(project.image)"
             :alt="`Screenshot of ${$rt(project.name)} project`"

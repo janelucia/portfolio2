@@ -2,7 +2,7 @@
   <div class="relative" ref="dropdownRef">
     <button
       @click="toggleDropdown"
-      class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 transition-all duration-200 border border-gray-200 rounded-lg bg-white hover:border-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+      class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 transition-all duration-200 bg-white border border-gray-200 rounded-lg hover:border-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
       :aria-label="`Current language: ${currentLanguage.name}. Click to change language`"
       :aria-expanded="isOpen">
       <span>{{ currentLanguage.code.toUpperCase() }}</span>
@@ -13,14 +13,13 @@
       />
     </button>
 
-    <!-- Dropdown -->
     <Transition
-      enter-active-class="transition ease-out duration-200"
-      enter-from-class="opacity-0 scale-95 translate-y-1"
-      enter-to-class="opacity-100 scale-100 translate-y-0"
-      leave-active-class="transition ease-in duration-150"
-      leave-from-class="opacity-100 scale-100 translate-y-0"
-      leave-to-class="opacity-0 scale-95 translate-y-1">
+      enter-active-class="transition duration-200 ease-out"
+      enter-from-class="scale-95 translate-y-1 opacity-0"
+      enter-to-class="scale-100 translate-y-0 opacity-100"
+      leave-active-class="transition duration-150 ease-in"
+      leave-from-class="scale-100 translate-y-0 opacity-100"
+      leave-to-class="scale-95 translate-y-1 opacity-0">
       <div
         v-if="isOpen"
         class="absolute right-0 z-50 w-40 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg backdrop-blur-sm"

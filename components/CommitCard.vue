@@ -2,7 +2,6 @@
   <div
     class="flex flex-col gap-6 p-6 transition-all duration-200 hover:shadow-lg group"
     :class="bgColor">
-    <!-- Header Section -->
     <div class="flex items-start justify-between">
       <div class="flex items-center gap-4">
         <div class="relative">
