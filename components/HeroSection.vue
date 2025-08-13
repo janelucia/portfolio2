@@ -28,23 +28,19 @@
           <h1
             class="text-5xl font-bold leading-tight text-gray-900 md:text-6xl lg:text-7xl"
           >
-            Moin,<br />
-            I am <span class="text-primary">Jane</span>
+            {{ $t("hero.greeting") }}<br />
+            {{ $t("hero.intro") }} <span class="text-primary">Jane</span>
           </h1>
 
           <div
             class="flex flex-col gap-4 text-lg leading-relaxed text-gray-600 md:text-xl"
           >
+            <p>{{ old() }} {{ $t("hero.description1") }}</p>
             <p>
-              {{ old() }} year old frontend developer based in Kiel, currently
-              studying computer science at the University of Applied Sciences.
-            </p>
-            <p>
-              As a former Sociology and educational science major, I'm
-              passionate about the intersection of technology and society.
+              {{ $t("hero.description2") }}
             </p>
             <p class="font-semibold text-gray-900">
-              Building a digital world that serves everyone.
+              {{ $t("hero.description3") }}
             </p>
           </div>
         </div>
@@ -55,7 +51,7 @@
             class="inline-flex items-center justify-center w-full h-12 text-lg font-medium text-white transition-colors rounded-lg bg-primary hover:bg-accent min-w-32 md:w-auto focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             aria-label="Navigate to contact section"
           >
-            Get in touch
+            {{ $t("hero.getInTouch") }}
           </a>
 
           <nav
@@ -92,7 +88,7 @@
               id="latest-activity-heading"
               class="text-2xl font-bold text-gray-900"
             >
-              Latest activity
+              {{ $t("hero.latestActivity") }}
             </h3>
           </div>
 
@@ -102,7 +98,7 @@
               id="latest-activity-heading"
               class="text-xl font-semibold text-gray-900"
             >
-              Latest activity
+              {{ $t("hero.latestActivity") }}
             </h3>
           </div>
           <div
@@ -124,7 +120,6 @@
         </section>
       </div>
     </div>
-
 
     <div
       v-if="!isScrolled"

@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "hello": "Hallo",
+    "education": "Bildung",
+    "work": "Arbeit", 
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Moin,",
+    "intro": "Ich bin",
+    "description1": "Jahre alte Frontend-Entwicklerin aus Kiel, studiere derzeit Informatik an der Fachhochschule.",
+    "description2": "Als ehemalige Soziologie- und Bildungswissenschaftsstudentin interessiere ich mich für die Schnittstelle zwischen Technologie und Gesellschaft.",
+    "description3": "Eine digitale Welt schaffen, die allen dient.",
+    "getInTouch": "Kontakt aufnehmen",
+    "latestActivity": "Neueste Aktivität"
+  },
+  "technologies": {
+    "subtitle": "Fähigkeiten",
+    "title": "Technologien mit denen ich arbeite",
+    "highlight": "Technologien", 
+    "description": "Ich bin immer bestrebt, neue Technologien zu lernen und meine Fähigkeiten zu verbessern. Wenn Sie ein Projekt im Kopf haben oder zusammenarbeiten möchten, zögern Sie nicht, mich zu kontaktieren!"
+  },
+  "about": {
+    "subtitle": "Über mich",
+    "title": "Meine Reise in die Technologie",
+    "highlight": "Reise"
+  },
+  "education": {
+    "subtitle": "Bildung",
+    "title": "Mein akademischer Werdegang",
+    "highlight": "akademischer"
+  },
+  "work": {
+    "subtitle": "Arbeit",
+    "title": "Meine berufliche Erfahrung", 
+    "highlight": "berufliche"
+  },
+  "projects": {
+    "subtitle": "Projekte",
+    "title": "Mein kreatives Portfolio",
+    "highlight": "kreatives",
+    "code": "Code",
+    "tryOut": "Ausprobieren"
+  },
+  "contact": {
+    "subtitle": "Kontakt",
+    "title": "Lass uns zusammen erschaffen",
+    "highlight": "zusammen",
+    "description": "Ich bin immer offen für neue Projekte und Kooperationen. Wenn Sie eine Idee oder ein Projekt im Kopf haben, zögern Sie nicht, mich zu kontaktieren."
+  },
+  "footer": {
+    "builtWith": "Mit ❤️ in Kiel erstellt",
+    "copyright": "Jane Schönfeld • Vue.js & Nuxt"
+  },
+  "common": {
+    "selectLanguage": "Sprache auswählen",
+    "close": "Schließen"
+  }
+}

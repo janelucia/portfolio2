@@ -4,10 +4,18 @@
     :class="headerClass"
   >
     <h1 class="text-2xl font-bold text-gray-900">{JS}</h1>
-    <div @click="toggleMenu" class="hamburger" :class="{ change: isActive }">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+    
+    <div class="flex items-center gap-3">
+      <!-- Language Switcher (hidden on mobile) -->
+      <div class="hidden lg:block">
+        <LanguageSwitcher />
+      </div>
+      
+      <div @click="toggleMenu" class="hamburger" :class="{ change: isActive }">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </div>
     <nav
       :class="[
@@ -24,18 +32,23 @@
           class="text-2xl font-semibold text-gray-900 transition-colors mobile-menu-item hover:text-primary"
           :class="{ 'text-primary': activeSection === nav.id }"
           @click="toggleMenu"
-          >{{ nav.name }}</a
+          >{{ $t(`nav.${nav.id}`) }}</a
         >
       </div>
-      <div class="flex gap-6 mt-12">
-        <a
-          v-for="contact in contactInfo"
-          :key="contact.url"
-          :href="contact.url"
-          class="p-3 transition-all duration-300 border border-gray-200 rounded-lg bg-gray-50 hover:shadow-lg hover:scale-110"
-        >
-          <Icon :name="contact.icon" class="w-6 h-6 text-gray-700" />
-        </a>
+      <div class="flex flex-col items-center gap-6 mt-12">
+        <!-- Mobile Language Switcher -->
+        <LanguageSwitcher />
+        
+        <div class="flex gap-6">
+          <a
+            v-for="contact in contactInfo"
+            :key="contact.url"
+            :href="contact.url"
+            class="p-3 transition-all duration-300 border border-gray-200 rounded-lg bg-gray-50 hover:shadow-lg hover:scale-110"
+          >
+            <Icon :name="contact.icon" class="w-6 h-6 text-gray-700" />
+          </a>
+        </div>
       </div>
     </nav>
     <!-- Desktop menu -->
@@ -45,7 +58,7 @@
         :href="nav.url"
         class="relative px-4 py-2 font-medium text-gray-700 transition-colors desktop-menu-item hover:text-primary"
         :class="{ 'text-primary': activeSection === nav.id }"
-        >{{ nav.name }}</a
+        >{{ $t(`nav.${nav.id}`) }}</a
       >
     </nav>
   </header>
@@ -55,9 +68,9 @@
   <footer class="py-8 bg-white border-t border-gray-200">
     <div class="max-w-6xl px-6 mx-auto">
       <div class="flex flex-col items-center gap-2">
-        <p class="text-sm text-gray-500">Built with ❤️ in Kiel, Germany</p>
+        <p class="text-sm text-gray-500">{{ $t('footer.builtWith') }}</p>
         <p class="text-xs text-gray-400">
-          © {{ new Date().getFullYear() }} Jane Schönfeld • Vue.js & Nuxt
+          © {{ new Date().getFullYear() }} {{ $t('footer.copyright') }}
         </p>
       </div>
     </div>
