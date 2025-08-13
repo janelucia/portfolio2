@@ -1,7 +1,7 @@
 {
   "nav": {
     "hello": "Hello",
-    "education": "Education", 
+    "education": "Education",
     "work": "Work",
     "projects": "Projects",
     "contact": "Contact"
@@ -13,6 +13,7 @@
     "description2": "As a former Sociology and educational science major, I'm passionate about the intersection of technology and society.",
     "description3": "Building a digital world that serves everyone.",
     "getInTouch": "Get in touch",
+    "activity": "Activity",
     "latestActivity": "Latest activity"
   },
   "technologies": {
@@ -32,13 +33,13 @@
     "highlight": "academic"
   },
   "work": {
-    "subtitle": "Work", 
+    "subtitle": "Work",
     "title": "My professional experience",
     "highlight": "professional"
   },
   "projects": {
     "subtitle": "Projects",
-    "title": "My creative portfolio", 
+    "title": "My creative portfolio",
     "highlight": "creative",
     "code": "Code",
     "tryOut": "Try it out"

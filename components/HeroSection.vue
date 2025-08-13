@@ -48,7 +48,7 @@
         <div class="flex flex-wrap items-center gap-6">
           <a
             href="#contact"
-            class="inline-flex items-center justify-center w-full h-12 text-lg font-medium text-white transition-colors rounded-lg bg-primary hover:bg-accent min-w-32 md:w-auto focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            class="inline-flex items-center justify-center w-full h-12 px-4 text-lg font-medium text-white transition-colors rounded-lg bg-primary hover:bg-accent min-w-32 md:w-auto focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             aria-label="Navigate to contact section"
           >
             {{ $t("hero.getInTouch") }}
@@ -76,13 +76,12 @@
           aria-labelledby="latest-activity-heading"
           class="flex flex-col gap-6 mt-12 md:mt-0"
         >
-          <!-- Mobile: Corporate style for consistency -->
           <div class="flex flex-col items-center gap-2 text-center md:hidden">
             <p
               class="text-sm font-semibold tracking-widest text-gray-500 uppercase"
               aria-hidden="true"
             >
-              Activity
+              {{ $t("hero.activity") }}
             </p>
             <h3
               id="latest-activity-heading"
@@ -92,7 +91,6 @@
             </h3>
           </div>
 
-          <!-- Desktop: Subtle style for content flow -->
           <div class="hidden md:flex md:flex-col md:gap-1">
             <h3
               id="latest-activity-heading"

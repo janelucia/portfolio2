@@ -2,7 +2,7 @@
   "nav": {
     "hello": "Hallo",
     "education": "Bildung",
-    "work": "Arbeit", 
+    "work": "Arbeit",
     "projects": "Projekte",
     "contact": "Kontakt"
   },
@@ -10,15 +10,16 @@
     "greeting": "Moin,",
     "intro": "Ich bin",
     "description1": "Jahre alte Frontend-Entwicklerin aus Kiel, studiere derzeit Informatik an der Fachhochschule.",
-    "description2": "Als ehemalige Soziologie- und Bildungswissenschaftsstudentin interessiere ich mich für die Schnittstelle zwischen Technologie und Gesellschaft.",
+    "description2": "Als ehemalige Soziologie- und Pädagogikstudentin interessiere ich mich für die Schnittstelle zwischen Technologie und Gesellschaft.",
     "description3": "Eine digitale Welt schaffen, die allen dient.",
     "getInTouch": "Kontakt aufnehmen",
+    "activity": "Aktivität",
     "latestActivity": "Neueste Aktivität"
   },
   "technologies": {
     "subtitle": "Fähigkeiten",
     "title": "Technologien mit denen ich arbeite",
-    "highlight": "Technologien", 
+    "highlight": "Technologien",
     "description": "Ich bin immer bestrebt, neue Technologien zu lernen und meine Fähigkeiten zu verbessern. Wenn Sie ein Projekt im Kopf haben oder zusammenarbeiten möchten, zögern Sie nicht, mich zu kontaktieren!"
   },
   "about": {
@@ -33,7 +34,7 @@
   },
   "work": {
     "subtitle": "Arbeit",
-    "title": "Meine berufliche Erfahrung", 
+    "title": "Meine berufliche Erfahrung",
     "highlight": "berufliche"
   },
   "projects": {
