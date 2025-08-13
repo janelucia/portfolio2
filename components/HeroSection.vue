@@ -125,108 +125,6 @@
       </div>
     </div>
 
-    <section
-      aria-labelledby="technologies-heading"
-      class="flex justify-center mt-12 min-h-64 md:mt-0"
-    >
-      <div
-        class="flex flex-col items-center justify-center w-full max-w-6xl gap-12"
-      >
-        <div class="flex flex-col items-center gap-2 text-center">
-          <p
-            class="text-sm font-semibold tracking-widest text-gray-500 uppercase"
-            aria-hidden="true"
-          >
-            Skills
-          </p>
-          <h2
-            id="technologies-heading"
-            class="text-2xl font-bold text-gray-900"
-          >
-            <span class="text-primary">Technologies</span> I work with
-          </h2>
-        </div>
-
-        <div
-          class="flex flex-wrap items-center justify-center gap-x-12 gap-y-8"
-          role="list"
-          aria-label="Technology skills"
-        >
-          <button
-            v-for="skill in skillInfos"
-            :key="skill.name"
-            type="button"
-            class="flex items-center justify-center p-4 transition-all duration-300 rounded-lg cursor-pointer min-w-20 min-h-20 group hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-            @click="setActiveSkill(skill.name)"
-            :aria-label="`Learn more about ${skill.name}`"
-            role="listitem"
-          >
-            <Icon
-              v-if="skill.icon"
-              :name="skill.icon"
-              class="w-12 h-12 transition-colors md:w-16 md:h-16 text-primary group-hover:text-accent"
-              :aria-hidden="true"
-            />
-            <span class="sr-only">{{ skill.name }}</span>
-          </button>
-        </div>
-
-        <div class="flex justify-center text-center">
-          <p class="max-w-2xl text-sm text-gray-600">
-            I am always eager to learn new technologies and improve my skills.
-            If you have a project in mind or want to collaborate, feel free to
-            reach out!
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <div
-      v-if="activeSkill"
-      class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50"
-      @click="clearActiveSkill"
-      role="dialog"
-      aria-modal="true"
-      :aria-labelledby="`skill-modal-title-${activeSkill}`"
-      aria-describedby="skill-modal-description"
-    >
-      <div
-        class="relative w-full max-w-sm p-6 bg-white rounded-lg shadow-xl"
-        @click.stop
-      >
-        <button
-          @click="clearActiveSkill"
-          class="absolute text-gray-400 transition-colors rounded top-4 right-4 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-          aria-label="Close skill details"
-          type="button"
-        >
-          <Icon name="mdi:close" class="w-5 h-5" aria-hidden="true" />
-        </button>
-
-        <div class="pr-8">
-          <div class="flex items-center gap-3 mb-3">
-            <Icon
-              v-if="skillInfos.find((s) => s.name === activeSkill)?.icon"
-              :name="skillInfos.find((s) => s.name === activeSkill)?.icon"
-              class="w-6 h-6 text-primary"
-              aria-hidden="true"
-            />
-            <h3
-              :id="`skill-modal-title-${activeSkill}`"
-              class="text-lg font-semibold text-gray-900"
-            >
-              {{ skillInfos.find((s) => s.name === activeSkill)?.name }}
-            </h3>
-          </div>
-          <p
-            id="skill-modal-description"
-            class="text-sm leading-relaxed text-gray-600"
-          >
-            {{ skillInfos.find((s) => s.name === activeSkill)?.description }}
-          </p>
-        </div>
-      </div>
-    </div>
 
     <div
       v-if="!isScrolled"
@@ -245,24 +143,14 @@ import Section from "~/components/Section.vue";
 import aboutJson from "~/helper/about.json";
 
 const contactInfos = aboutJson.contact;
-const skillInfos = aboutJson.skills;
 
 const { data: latestCommit } = useFetch("/api/github/latestCommit");
 
 const isScrolled = ref(false);
-const activeSkill = ref("");
 
 function checkScroll() {
   const scrollY = window.scrollY;
   isScrolled.value = scrollY > 0;
-}
-
-function setActiveSkill(skillName: string) {
-  activeSkill.value = skillName;
-}
-
-function clearActiveSkill() {
-  activeSkill.value = "";
 }
 
 const old = () => {
