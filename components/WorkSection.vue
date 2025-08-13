@@ -8,8 +8,8 @@
   >
     <div class="flex flex-col max-w-4xl gap-8 mx-auto">
       <div
-        v-for="work in workInfos"
-        :key="work.company"
+        v-for="work in $tm('work.data')"
+        :key="work"
         class="flex flex-col gap-6"
       >
         <div
@@ -19,16 +19,16 @@
             <div class="flex flex-col gap-2">
               <div class="flex flex-wrap items-start justify-between gap-4">
                 <h3 class="text-xl font-semibold text-gray-900">
-                  {{ work.position }}
+                  {{ $rt(work.position) }}
                 </h3>
                 <span
                   class="px-3 py-1 text-sm font-medium text-gray-800 rounded-full bg-accent/40"
                 >
-                  {{ work.period }}
+                  {{ $rt(work.period) }}
                 </span>
               </div>
               <p class="text-lg text-gray-600">
-                {{ work.company }}
+                {{ $rt(work.company) }}
               </p>
             </div>
 
@@ -40,7 +40,7 @@
                 <ListItem
                   v-for="detail in work.details"
                   :key="detail"
-                  :text="detail"
+                  :text="$rt(detail)"
                   class="flex items-start gap-3"
                 />
               </ul>
@@ -54,7 +54,4 @@
 
 <script setup lang="ts">
 import Section from "~/components/Section.vue";
-import aboutJson from "~/helper/about.json";
-
-const workInfos = aboutJson.work;
 </script>

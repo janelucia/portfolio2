@@ -41,19 +41,141 @@
   "education": {
     "subtitle": "Education",
     "title": "My academic journey",
-    "highlight": "academic"
+    "highlight": "academic",
+    "data": [
+      {
+        "program": "B.Sc. in Computer Science",
+        "institution": "University of Applied Sciences Kiel",
+        "period": "2022 - present",
+        "grade": "Current Grade: 1.5",
+        "details": [
+          "Focus on artificial intelligence",
+          "Numerous projects with different programming languages. One of which will be featured in the projects section."
+        ]
+      },
+      {
+        "program": "Scholarship",
+        "institution": "Manke-Förderstiftung",
+        "period": "Sep 2024 - present",
+        "details": [
+          "The Manke-Förderstiftung supports students in the field of science.",
+          "The scholarship is awarded based on academic performance and personal motivation."
+        ]
+      },
+      {
+        "program": "European Project Semester",
+        "institution": "Oslo Metropolitan University",
+        "period": "Jan - Jun 2025",
+        "details": [
+          "Project: A host for the AI Lab at the university. The project will be carried out by a team of four students from different countries, each bringing diverse skill sets."
+        ]
+      },
+      {
+        "program": "Frontend Developer Program",
+        "institution": "opencampus",
+        "period": "January - July 2022",
+        "details": [
+          "Inverted classroom model: learning through videos and asking questions in 'class'",
+          "Project 1: A website for a fictional coffee company with HTML, CSS and JS",
+          "Project 2: A fitness app with React, Tailwind CSS and Hygraph"
+        ]
+      },
+      {
+        "program": "B.A. Educational Science and Sociology",
+        "institution": "Christian-Albrecht-University Kiel",
+        "period": "2018-2021",
+        "grade": "Grade: 1.5",
+        "details": [
+          "Focus on organisational sociology",
+          "Bachelor thesis on the topic of New Work. Comparing the concept of New Work within the company OTTO and the company Google portrayed in YouTube videos."
+        ]
+      }
+    ]
   },
   "work": {
     "subtitle": "Work",
     "title": "My professional experience",
-    "highlight": "professional"
+    "highlight": "professional",
+    "data": [
+      {
+        "position": "Working Student in Software Development",
+        "company": "OTTO",
+        "period": "Feb 2024 - Jan 2025",
+        "details": ["Working on different internal projects with primarily React"]
+      },
+      {
+        "position": "Working Student in Software Development",
+        "company": "GEPROG",
+        "period": "Feb 2022 - 2024",
+        "details": [
+          "Working on different projects with primarily Vue.js and Nuxt 3",
+          "Opportunity to write New Work posts for the company"
+        ]
+      }
+    ]
   },
   "projects": {
     "subtitle": "Projects",
     "title": "My creative portfolio",
     "highlight": "creative",
     "code": "Code",
-    "tryOut": "Try it out"
+    "tryOut": "Try it out",
+    "data": [
+      {
+        "name": "knittly",
+        "subTitle": "Personal Project with Vue and TypeScript",
+        "currentState": "in progress",
+        "description": "A minimalist mobile-first application designed to help knitters track and manage their knitting projects. Features stitch counting, row tracking, and project organization with a clean, mobile-optimized interface built with Vue and TypeScript.",
+        "image": "/images/knittly.png",
+        "githubUrl": "https://github.com/janelucia/knittly",
+        "liveUrl": "https://knittly.vercel.app/"
+      },
+      {
+        "name": "Grade Trace",
+        "subTitle": "Personal Project with Nuxt",
+        "currentState": "in progress",
+        "description": "This is a personal project that I started to keep track of my university grades. It is built with Nuxt3 and is hosted on Vercel.",
+        "image": "/images/grade-trace.png",
+        "githubUrl": "https://github.com/janelucia/grade-trace",
+        "liveUrl": "https://grade-trace.vercel.app/"
+      },
+      {
+        "name": "tictacthetoe",
+        "subTitle": "Personal Project with Nuxt",
+        "currentState": "in progress",
+        "description": "This is the second rendition of my university project ultimateTicTacToe. I wanted to do it with Nuxt3. The game is hosted on vercel.",
+        "image": "/images/tictacthetoe.png",
+        "githubUrl": "https://github.com/janelucia/tictacthetoe",
+        "liveUrl": ""
+      },
+      {
+        "name": "AIGenie",
+        "subTitle": "University Project with Vue, Python, and TypeScript",
+        "currentState": "finished",
+        "description": "A mobile web application that serves as a host for the AI Lab of OsloMet University. Features an interactive AI assistant chat interface, information about researchers, research project details, and upcoming events exploration. Developed in a team of four with cross-functional collaboration. I was responsible for the frontend development using Vue and TypeScript",
+        "image": "/images/ai-genie.png",
+        "githubUrl": "https://github.com/janelucia/ai-genie",
+        "liveUrl": ""
+      },
+      {
+        "name": "ultimateTicTacToe",
+        "subTitle": "University Project with vanilla JS, HTML, and CSS",
+        "currentState": "finished",
+        "description": "A second-semester project in the 'Web Applications' module. This implementation of tic-tac-toe introduces an additional layer of complexity, where each square contains a smaller tic-tac-toe board. The mark on a small board determines the the next larger board, adding a strategic element to the game. The win of a small board determines the mark on the larger board.",
+        "image": "/images/ultimateTicTacToe.png",
+        "githubUrl": "https://github.com/janelucia/ultimateTicTacToe",
+        "liveUrl": ""
+      },
+      {
+        "name": "WA-FeWo",
+        "subTitle": "University Project with vanilla JS, HTML, and CSS",
+        "currentState": "finished",
+        "description": "A second-semester project in the 'Web Applications' module, focusing on the development of a booking platform for holiday flats. The application processes data from an Airbnb CSV file to display available rentals.",
+        "image": "/images/waFeWo.png",
+        "githubUrl": "https://github.com/janelucia/WA-FeWo",
+        "liveUrl": ""
+      }
+    ]
   },
   "contact": {
     "subtitle": "Contact",

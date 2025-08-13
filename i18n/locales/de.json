@@ -41,19 +41,141 @@
   "education": {
     "subtitle": "Bildung",
     "title": "Mein akademischer Werdegang",
-    "highlight": "akademischer"
+    "highlight": "akademischer",
+    "data": [
+      {
+        "program": "B.Sc. in Informatik",
+        "institution": "Fachhochschule Kiel",
+        "period": "2022 - heute",
+        "grade": "Aktuelle Note: 1,5",
+        "details": [
+          "Schwerpunkt auf künstlicher Intelligenz",
+          "Zahlreiche Projekte mit verschiedenen Programmiersprachen. Eines davon wird im Projektbereich vorgestellt."
+        ]
+      },
+      {
+        "program": "Stipendium",
+        "institution": "Manke-Förderstiftung",
+        "period": "Sep 2024 - heute",
+        "details": [
+          "Die Manke-Förderstiftung unterstützt Studierende im Bereich der Naturwissenschaften.",
+          "Das Stipendium wird basierend auf akademischen Leistungen und persönlicher Motivation vergeben."
+        ]
+      },
+      {
+        "program": "European Project Semester",
+        "institution": "Oslo Metropolitan University",
+        "period": "Jan - Jun 2025",
+        "details": [
+          "Projekt: Ein Host für das AI Lab der Universität. Das Projekt wird von einem Team aus vier Studierenden aus verschiedenen Ländern mit unterschiedlichen Fähigkeiten durchgeführt."
+        ]
+      },
+      {
+        "program": "Frontend Developer Programm",
+        "institution": "opencampus",
+        "period": "Januar - Juli 2022",
+        "details": [
+          "Inverted Classroom-Modell: Lernen durch Videos und Fragen stellen im 'Unterricht'",
+          "Projekt 1: Eine Website für ein fiktives Kaffeeunternehmen mit HTML, CSS und JS",
+          "Projekt 2: Eine Fitness-App mit React, Tailwind CSS und Hygraph"
+        ]
+      },
+      {
+        "program": "B.A. Pädagogik und Soziologie",
+        "institution": "Christian-Albrechts-Universität Kiel",
+        "period": "2018-2021",
+        "grade": "Note: 1,5",
+        "details": [
+          "Schwerpunkt auf Organisationssoziologie",
+          "Bachelorarbeit zum Thema New Work. Vergleich des New Work-Konzepts im Unternehmen OTTO und Google, dargestellt in YouTube-Videos."
+        ]
+      }
+    ]
   },
   "work": {
     "subtitle": "Arbeit",
     "title": "Meine berufliche Erfahrung",
-    "highlight": "berufliche"
+    "highlight": "berufliche",
+    "data": [
+      {
+        "position": "Werkstudent in der Softwareentwicklung",
+        "company": "OTTO",
+        "period": "Feb 2024 - Jan 2025",
+        "details": ["Arbeit an verschiedenen internen Projekten hauptsächlich mit React"]
+      },
+      {
+        "position": "Werkstudent in der Softwareentwicklung", 
+        "company": "GEPROG",
+        "period": "Feb 2022 - 2024",
+        "details": [
+          "Arbeit an verschiedenen Projekten hauptsächlich mit Vue.js und Nuxt 3",
+          "Gelegenheit, New Work Posts für das Unternehmen zu schreiben"
+        ]
+      }
+    ]
   },
   "projects": {
     "subtitle": "Projekte",
     "title": "Mein kreatives Portfolio",
     "highlight": "kreatives",
     "code": "Code",
-    "tryOut": "Ausprobieren"
+    "tryOut": "Ausprobieren",
+    "data": [
+      {
+        "name": "knittly",
+        "subTitle": "Persönliches Projekt mit Vue und TypeScript",
+        "currentState": "in Arbeit",
+        "description": "Eine minimalistische, mobile-first Anwendung zur Verwaltung von Strickprojekten. Mit Maschenzeiger, Reihenverfolgung und Projektorganisation in einem sauberen, mobil-optimierten Interface mit Vue und TypeScript.",
+        "image": "/images/knittly.png",
+        "githubUrl": "https://github.com/janelucia/knittly",
+        "liveUrl": "https://knittly.vercel.app/"
+      },
+      {
+        "name": "Grade Trace",
+        "subTitle": "Persönliches Projekt mit Nuxt",
+        "currentState": "in Arbeit",
+        "description": "Ein persönliches Projekt zur Verfolgung meiner Universitätsnoten. Erstellt mit Nuxt3 und gehostet auf Vercel.",
+        "image": "/images/grade-trace.png",
+        "githubUrl": "https://github.com/janelucia/grade-trace",
+        "liveUrl": "https://grade-trace.vercel.app/"
+      },
+      {
+        "name": "tictacthetoe",
+        "subTitle": "Persönliches Projekt mit Nuxt",
+        "currentState": "in Arbeit",
+        "description": "Die zweite Version meines Universitätsprojekts ultimateTicTacToe. Ich wollte es mit Nuxt3 umsetzen. Das Spiel wird auf Vercel gehostet.",
+        "image": "/images/tictacthetoe.png",
+        "githubUrl": "https://github.com/janelucia/tictacthetoe",
+        "liveUrl": ""
+      },
+      {
+        "name": "AIGenie",
+        "subTitle": "Universitätsprojekt mit Vue, Python und TypeScript",
+        "currentState": "abgeschlossen",
+        "description": "Eine mobile Webanwendung als Host für das AI Lab der OsloMet Universität. Mit interaktivem KI-Assistenten-Chat, Informationen über Forscher, Forschungsprojektdetails und Event-Exploration. In einem 4er-Team entwickelt. Ich war für die Frontend-Entwicklung mit Vue und TypeScript verantwortlich.",
+        "image": "/images/ai-genie.png",
+        "githubUrl": "https://github.com/janelucia/ai-genie",
+        "liveUrl": ""
+      },
+      {
+        "name": "ultimateTicTacToe",
+        "subTitle": "Universitätsprojekt mit vanilla JS, HTML und CSS",
+        "currentState": "abgeschlossen",
+        "description": "Ein Projekt des zweiten Semesters im Modul 'Webanwendungen'. Diese Tic-Tac-Toe-Implementierung fügt eine zusätzliche Komplexitätsebene hinzu, bei der jedes Feld ein kleineres Tic-Tac-Toe-Brett enthält. Die Markierung auf einem kleinen Brett bestimmt das nächste größere Brett und fügt dem Spiel ein strategisches Element hinzu.",
+        "image": "/images/ultimateTicTacToe.png",
+        "githubUrl": "https://github.com/janelucia/ultimateTicTacToe",
+        "liveUrl": ""
+      },
+      {
+        "name": "WA-FeWo",
+        "subTitle": "Universitätsprojekt mit vanilla JS, HTML und CSS",
+        "currentState": "abgeschlossen",
+        "description": "Ein Projekt des zweiten Semesters im Modul 'Webanwendungen' zur Entwicklung einer Buchungsplattform für Ferienwohnungen. Die Anwendung verarbeitet Daten aus einer Airbnb-CSV-Datei zur Anzeige verfügbarer Unterkünfte.",
+        "image": "/images/waFeWo.png",
+        "githubUrl": "https://github.com/janelucia/WA-FeWo",
+        "liveUrl": ""
+      }
+    ]
   },
   "contact": {
     "subtitle": "Kontakt",

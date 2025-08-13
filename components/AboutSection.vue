@@ -24,11 +24,8 @@
           <div
             class="flex flex-col gap-4 text-lg leading-relaxed text-gray-600 md:text-xl"
           >
-            <p>
-              {{ $t("about.text.0") }}
-            </p>
-            <p>
-              {{ $t("about.text.1") }}
+            <p v-for="paragraph in $tm('about.text')" :key="paragraph">
+              {{ $rt(paragraph) }}
             </p>
             <p class="font-semibold text-gray-900">
               {{ $t("about.textHighlight") }}
@@ -42,15 +39,8 @@
           </h3>
           <ul class="flex flex-col gap-3">
             <ListItem
-              :text="$t('about.whatDrivesMeText.0')"
-              disk-color="bg-accent"
-            />
-            <ListItem
-              :text="$t('about.whatDrivesMeText.1')"
-              disk-color="bg-accent"
-            />
-            <ListItem
-              :text="$t('about.whatDrivesMeText.2')"
+              v-for="paragraph in $tm('about.whatDrivesMeText')"
+              :text="$rt(paragraph)"
               disk-color="bg-accent"
             />
           </ul>
