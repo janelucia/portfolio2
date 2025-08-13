@@ -1,8 +1,8 @@
 <template>
   <Section
-    section-title="My academic journey"
-    section-subtitle="Education"
-    highlight-word="academic"
+    :section-title="$t('education.title')"
+    :section-subtitle="$t('education.subtitle')"
+    :highlight-word="$t('education.highlight')"
     anchor-ref="education"
     padding-t-b="py-16"
   >
@@ -32,30 +32,23 @@
               </p>
             </div>
 
-            <div v-if="education.grade" class="flex items-center gap-2">
-              <div class="flex-shrink-0 w-2 h-2 rounded-full bg-primary"></div>
-              <span class="text-sm font-medium text-gray-900">
-                {{ education.grade }}
-              </span>
-            </div>
+            <ListItem
+              v-if="education.grade"
+              :text="education.grade"
+              disk-color="bg-primary"
+            />
 
             <div
               v-if="education.details && education.details.length > 0"
               class="flex flex-col gap-3"
             >
               <ul class="flex flex-col gap-2">
-                <li
+                <ListItem
                   v-for="detail in education.details"
+                  :text="detail"
                   :key="detail"
                   class="flex items-start gap-3"
-                >
-                  <div
-                    class="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 flex-shrink-0"
-                  ></div>
-                  <span class="leading-relaxed text-gray-600">{{
-                    detail
-                  }}</span>
-                </li>
+                />
               </ul>
             </div>
           </div>

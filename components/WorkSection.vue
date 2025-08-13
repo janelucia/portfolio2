@@ -1,8 +1,8 @@
 <template>
   <Section
-    section-title="My professional experience"
-    section-subtitle="Work"
-    highlight-word="professional"
+    :section-title="$t('work.title')"
+    :section-subtitle="$t('work.subtitle')"
+    :highlight-word="$t('work.highlight')"
     anchor-ref="work"
     padding-t-b="py-16"
   >
@@ -37,18 +37,12 @@
               class="flex flex-col gap-3"
             >
               <ul class="flex flex-col gap-2">
-                <li
+                <ListItem
                   v-for="detail in work.details"
                   :key="detail"
+                  :text="detail"
                   class="flex items-start gap-3"
-                >
-                  <div
-                    class="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 flex-shrink-0"
-                  ></div>
-                  <span class="leading-relaxed text-gray-600">{{
-                    detail
-                  }}</span>
-                </li>
+                />
               </ul>
             </div>
           </div>

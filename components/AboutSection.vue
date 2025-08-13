@@ -41,9 +41,18 @@
             {{ $t("about.whatDrivesMe") }}
           </h3>
           <ul class="flex flex-col gap-3">
-            <ListItem :text="$t('about.whatDrivesMeText.0')" />
-            <ListItem :text="$t('about.whatDrivesMeText.1')" />
-            <ListItem :text="$t('about.whatDrivesMeText.2')" />
+            <ListItem
+              :text="$t('about.whatDrivesMeText.0')"
+              disk-color="bg-accent"
+            />
+            <ListItem
+              :text="$t('about.whatDrivesMeText.1')"
+              disk-color="bg-accent"
+            />
+            <ListItem
+              :text="$t('about.whatDrivesMeText.2')"
+              disk-color="bg-accent"
+            />
           </ul>
         </div>
       </div>
