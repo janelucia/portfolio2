@@ -8,7 +8,7 @@
   >
     <div class="flex flex-col max-w-4xl gap-8 mx-auto">
       <div
-        v-for="(education, index) in educationInfos"
+        v-for="education in educationInfos"
         :key="education.program"
         class="flex flex-col gap-6"
       >

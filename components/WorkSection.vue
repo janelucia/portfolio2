@@ -1,25 +1,60 @@
 <template>
   <Section
-    text-size="text-lg md:text-2xl"
-    bg-color="bg-accent"
-    section-title="Work"
-    bg-color-section="bg-background"
+    section-title="My professional experience"
+    section-subtitle="Work"
+    highlight-word="professional"
+    anchor-ref="work"
+    padding-t-b="py-16"
   >
-    <ul v-for="work in workInfos" :key="work.company">
-      <Card
-        :title="work.company"
-        :additional-information="work.period"
-        :subtitle="work.position"
-        bg-card-color="bg-white"
+    <div class="flex flex-col max-w-4xl gap-8 mx-auto">
+      <div
+        v-for="work in workInfos"
+        :key="work.company"
+        class="flex flex-col gap-6"
       >
-        <ul
-          class="text-gray-700 list-disc list-inside"
-          v-for="detail in work.details"
+        <div
+          class="overflow-hidden border border-gray-200 bg-gray-50 rounded-xl"
         >
-          <li>{{ detail }}</li>
-        </ul>
-      </Card>
-    </ul>
+          <div class="flex flex-col gap-4 p-6">
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-wrap items-start justify-between gap-4">
+                <h3 class="text-xl font-semibold text-gray-900">
+                  {{ work.position }}
+                </h3>
+                <span
+                  class="px-3 py-1 text-sm font-medium text-gray-800 rounded-full bg-accent/40"
+                >
+                  {{ work.period }}
+                </span>
+              </div>
+              <p class="text-lg text-gray-600">
+                {{ work.company }}
+              </p>
+            </div>
+
+            <div
+              v-if="work.details && work.details.length > 0"
+              class="flex flex-col gap-3"
+            >
+              <ul class="flex flex-col gap-2">
+                <li
+                  v-for="detail in work.details"
+                  :key="detail"
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <span class="leading-relaxed text-gray-600">{{
+                    detail
+                  }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </Section>
 </template>
 
