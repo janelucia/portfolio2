@@ -4,19 +4,7 @@
     :class="headerClass"
   >
     <h1 class="text-2xl font-bold text-gray-900">{JS}</h1>
-    
-    <div class="flex items-center gap-3">
-      <!-- Language Switcher (hidden on mobile) -->
-      <div class="hidden lg:block">
-        <LanguageSwitcher />
-      </div>
-      
-      <div @click="toggleMenu" class="hamburger" :class="{ change: isActive }">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-    </div>
+
     <nav
       :class="[
         'fixed bg-white/95 backdrop-blur-md border-l border-gray-200 flex flex-col items-center justify-center top-0 right-0 w-80 h-screen p-8 z-50 transition-transform duration-500 ease-in-out shadow-2xl',
@@ -24,7 +12,6 @@
       ]"
       aria-label="mobile menu"
     >
-      <!-- Mobile menu -->
       <div class="flex flex-col items-center gap-12">
         <a
           v-for="nav in navigation"
@@ -36,9 +23,8 @@
         >
       </div>
       <div class="flex flex-col items-center gap-6 mt-12">
-        <!-- Mobile Language Switcher -->
         <LanguageSwitcher />
-        
+
         <div class="flex gap-6">
           <a
             v-for="contact in contactInfo"
@@ -51,7 +37,7 @@
         </div>
       </div>
     </nav>
-    <!-- Desktop menu -->
+
     <nav class="items-center hidden gap-8 lg:flex" aria-label="desktop menu">
       <a
         v-for="nav in navigation"
@@ -61,6 +47,18 @@
         >{{ $t(`nav.${nav.id}`) }}</a
       >
     </nav>
+
+    <div class="flex items-center gap-3">
+      <div class="hidden lg:block">
+        <LanguageSwitcher />
+      </div>
+
+      <div @click="toggleMenu" class="hamburger" :class="{ change: isActive }">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
   </header>
   <main class="flex flex-col items-center gap-4 top-16">
     <slot />
@@ -68,9 +66,9 @@
   <footer class="py-8 bg-white border-t border-gray-200">
     <div class="max-w-6xl px-6 mx-auto">
       <div class="flex flex-col items-center gap-2">
-        <p class="text-sm text-gray-500">{{ $t('footer.builtWith') }}</p>
+        <p class="text-sm text-gray-500">{{ $t("footer.builtWith") }}</p>
         <p class="text-xs text-gray-400">
-          © {{ new Date().getFullYear() }} {{ $t('footer.copyright') }}
+          © {{ new Date().getFullYear() }} {{ $t("footer.copyright") }}
         </p>
       </div>
     </div>
@@ -98,21 +96,18 @@ function checkScroll() {
   isScrolled.value = window.scrollY > 0;
 }
 
-// Navigation state tracking
 const visibleAnchors = ref(new Set<string>());
 const lastSeenAnchor = ref("hello");
 const lastScrollY = ref(0);
 const scrollDirection = ref<"up" | "down">("down");
 
 function setupAnchorObserver() {
-  // Observer configuration - account for fixed header height
   const observerConfig = {
     rootMargin: "-64px 0px 0px 0px",
     threshold: 0.1,
   };
 
   const observer = new IntersectionObserver((entries) => {
-    // Track scroll direction by comparing current position with last position
     const currentScrollY = window.scrollY;
     if (currentScrollY > lastScrollY.value) {
       scrollDirection.value = "down";
@@ -121,7 +116,6 @@ function setupAnchorObserver() {
     }
     lastScrollY.value = currentScrollY;
 
-    // Update set of currently visible anchors
     entries.forEach((entry) => {
       const anchorId = entry.target.id;
       if (entry.isIntersecting) {
@@ -131,12 +125,10 @@ function setupAnchorObserver() {
       }
     });
 
-    // Determine active navigation section
     const sectionOrder = ["hello", "education", "work", "projects", "contact"];
-    let newActiveSection = activeSection.value; // Keep current by default
+    let newActiveSection = activeSection.value;
 
     if (visibleAnchors.value.size > 0) {
-      // When anchors are visible, use the lowest (last in order) one
       for (const sectionId of sectionOrder) {
         if (visibleAnchors.value.has(sectionId)) {
           newActiveSection = sectionId;
@@ -144,7 +136,6 @@ function setupAnchorObserver() {
         }
       }
     } else if (scrollDirection.value === "up") {
-      // When scrolling up and no anchors visible, go to previous section
       const lastIndex = sectionOrder.indexOf(lastSeenAnchor.value);
       if (lastIndex > 0) {
         newActiveSection = sectionOrder[lastIndex - 1];
@@ -152,12 +143,10 @@ function setupAnchorObserver() {
         newActiveSection = "hello";
       }
     }
-    // When scrolling down and no anchors visible, keep current section
 
     activeSection.value = newActiveSection;
   }, observerConfig);
 
-  // Observe all section anchor elements
   const anchors = ["hello", "education", "work", "projects", "contact"];
   anchors.forEach((anchorId) => {
     const element = document.getElementById(anchorId);
