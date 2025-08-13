@@ -1,8 +1,8 @@
 <template>
   <Section
-    section-title="My creative portfolio"
-    section-subtitle="Projects"
-    highlight-word="creative"
+    :section-title="$t('projects.title')"
+    :section-subtitle="$t('projects.subtitle')"
+    :highlight-word="$t('projects.highlight')"
     anchor-ref="projects"
     padding-t-b="py-16"
   >
