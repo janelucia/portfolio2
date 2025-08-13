@@ -12,7 +12,7 @@
             {{ period }}
           </span>
         </div>
-        <p class="text-lg text-gray-600">
+        <p class="text-base md:text-lg text-gray-600">
           {{ subtitle }}
         </p>
       </div>

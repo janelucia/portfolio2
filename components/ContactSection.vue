@@ -9,7 +9,7 @@
     <div class="flex flex-col max-w-4xl gap-8 mx-auto">
       <div class="flex flex-col gap-6">
         <div class="flex flex-col gap-4 text-center">
-          <p class="text-lg leading-relaxed text-gray-600">
+          <p class="text-lg md:text-xl leading-relaxed text-gray-600">
             {{ $t("contact.description") }}
           </p>
         </div>
@@ -27,7 +27,7 @@
                 class="w-8 h-8 text-blue-600 transition-transform group-hover:scale-110"
               />
               <span
-                class="text-lg font-semibold text-gray-900 group-hover:text-blue-700"
+                class="text-base md:text-lg font-semibold text-gray-900 group-hover:text-blue-700"
                 >LinkedIn</span
               >
             </a>
@@ -43,7 +43,7 @@
                 class="w-8 h-8 text-green-600 transition-transform group-hover:scale-110"
               />
               <span
-                class="text-lg font-semibold text-gray-900 group-hover:text-green-700"
+                class="text-base md:text-lg font-semibold text-gray-900 group-hover:text-green-700"
                 >Xing</span
               >
             </a>
@@ -58,7 +58,7 @@
                 :name="contactInfos.github.icon"
                 class="w-8 h-8 text-gray-900 transition-transform group-hover:scale-110"
               />
-              <span class="text-lg font-semibold text-gray-900">GitHub</span>
+              <span class="text-base md:text-lg font-semibold text-gray-900">GitHub</span>
             </a>
 
             <a
@@ -70,7 +70,7 @@
                 class="w-8 h-8 text-red-600 transition-transform group-hover:scale-110"
               />
               <span
-                class="text-lg font-semibold text-gray-900 group-hover:text-red-700"
+                class="text-base md:text-lg font-semibold text-gray-900 group-hover:text-red-700"
                 >Email</span
               >
             </a>

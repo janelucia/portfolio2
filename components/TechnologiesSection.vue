@@ -32,7 +32,7 @@
       </div>
 
       <div class="flex justify-center text-center">
-        <p class="max-w-2xl text-sm text-gray-600">
+        <p class="max-w-2xl text-base text-gray-600">
           {{ $t("technologies.description") }}
         </p>
       </div>
@@ -70,14 +70,14 @@
             />
             <h3
               :id="`skill-modal-title-${activeSkill}`"
-              class="text-lg font-semibold text-gray-900"
+              class="text-lg md:text-xl font-semibold text-gray-900"
             >
               {{ skillInfos.find((s) => s.name === activeSkill)?.name || "" }}
             </h3>
           </div>
           <p
             id="skill-modal-description"
-            class="text-sm leading-relaxed text-gray-600"
+            class="text-base leading-relaxed text-gray-600"
           >
             {{ skillInfos.find((s) => s.name === activeSkill)?.description }}
           </p>

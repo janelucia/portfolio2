@@ -6,7 +6,7 @@
     >
       {{ subtitle || "Section" }}
     </p>
-    <h2 class="text-2xl font-bold text-gray-900" v-html="highlightedTitle"></h2>
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-900" v-html="highlightedTitle"></h2>
   </div>
 </template>
 

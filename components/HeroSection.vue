@@ -26,14 +26,14 @@
       <div class="flex flex-col justify-center order-2 gap-8 md:order-1">
         <div class="flex flex-col gap-6">
           <h1
-            class="text-5xl font-bold leading-tight text-gray-900 md:text-6xl lg:text-7xl"
+            class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900"
           >
             {{ $t("hero.greeting") }}<br />
             {{ $t("hero.intro") }} <span class="text-primary">Jane</span>
           </h1>
 
           <div
-            class="flex flex-col gap-4 text-lg leading-relaxed text-gray-600 md:text-xl"
+            class="flex flex-col gap-4 text-lg md:text-xl leading-relaxed text-gray-600"
           >
             <p>{{ old() }} {{ $t("hero.description1") }}</p>
             <p>
