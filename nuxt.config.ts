@@ -9,10 +9,16 @@ export default defineNuxtConfig({
   },
   i18n: {
     defaultLocale: "en",
+    strategy: "prefix_except_default",
     locales: [
       { code: "en", name: "English", file: "en.json" },
       { code: "de", name: "Deutsch", file: "de.json" },
     ],
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root",
+    },
   },
   runtimeConfig: {
     githubPat: "", // can be overridden by NUXT_GITHUB_PAT environment variable

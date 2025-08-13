@@ -25,7 +25,18 @@
   "about": {
     "subtitle": "About me",
     "title": "My journey into technology",
-    "highlight": "journey"
+    "highlight": "journey",
+    "text": [
+      "My path into tech started in an unexpected way. Studying Sociology and Educational Science taught me how technology can influence people and communities.",
+      "Now, while studying Computer Science at the University of Applied Sciences Kiel, I’m learning to combine technical skills with an awareness of human needs."
+    ],
+    "textHighlight": "I aim to create digital solutions that are useful, thoughtful, and accessible to everyone.",
+    "whatDrivesMe": "What drives me",
+    "whatDrivesMeText": [
+      "Creating inclusive digital experiences",
+      "Exploring how technology can support people",
+      "Continuous learning and growth"
+    ]
   },
   "education": {
     "subtitle": "Education",

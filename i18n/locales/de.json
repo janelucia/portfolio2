@@ -25,7 +25,18 @@
   "about": {
     "subtitle": "Über mich",
     "title": "Meine Reise in die Technologie",
-    "highlight": "Reise"
+    "highlight": "Reise",
+    "text": [
+      "Mein Weg in die Technologie begann auf unerwartete Weise. Das Studium der Soziologie und Pädagogik lehrte mich, wie Technologie Menschen und Gemeinschaften beeinflussen kann.",
+      "Jetzt, während ich Informatik an der Fachhochschule Kiel studiere, lerne ich, technische Fähigkeiten mit einem Bewusstsein für menschliche Bedürfnisse zu kombinieren."
+    ],
+    "textHighlight": "Ich strebe danach, digitale Lösungen zu schaffen, die nützlich, durchdacht und für alle zugänglich sind.",
+    "whatDrivesMe": "Was mich antreibt",
+    "whatDrivesMeText": [
+      "Creating inclusive digital experiences",
+      "Exploring how technology can support people",
+      "Continuous learning and growth"
+    ]
   },
   "education": {
     "subtitle": "Bildung",
