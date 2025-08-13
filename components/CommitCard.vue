@@ -2,23 +2,27 @@
   <div class="flex flex-col gap-8 p-4 rounded-md shadow-md" :class="bgColor">
     <div class="flex justify-between gap-4">
       <div class="flex gap-4">
-        <div class="avatar w-12">
-            <a :href="committerUrl">
-              <NuxtPicture format="webp" :src="avatarUrl" :img-attrs="{ class: 'rounded-full' }" />
-            </a>
+        <div class="w-12 avatar">
+          <a :href="committerUrl">
+            <NuxtPicture
+              format="webp"
+              :src="avatarUrl"
+              :img-attrs="{ class: 'rounded-full' }"
+            />
+          </a>
         </div>
         <div>
           <a
-              :href="repositoryUrl"
-              target="_blank"
-              class="cursor-pointer hover:text-text-dark"
+            :href="repositoryUrl"
+            target="_blank"
+            class="cursor-pointer hover:text-text-dark"
           >
             <p class="font-bold">{{ repositoryName }}</p>
           </a>
           <a
-              :href="ownerUrl"
-              target="_blank"
-              class="cursor-pointer hover:text-text-dark"
+            :href="ownerUrl"
+            target="_blank"
+            class="cursor-pointer hover:text-text-dark"
           >
             <p>{{ ownerName }}</p>
           </a>
@@ -29,14 +33,19 @@
       </div>
     </div>
     <div>
-      <a v-if="commitMessage" :href="commitUrl" target="_blank" class="font-bold hover:text-text-dark cursor-pointer">
+      <a
+        v-if="commitMessage"
+        :href="commitUrl"
+        target="_blank"
+        class="font-bold cursor-pointer hover:text-text-dark"
+      >
         {{ commitMessage }}
       </a>
       <a
-          v-if="committerUrl"
-          :href="committerUrl"
-          target="_blank"
-          class="cursor-pointer hover:text-text-dark"
+        v-if="committerUrl"
+        :href="committerUrl"
+        target="_blank"
+        class="cursor-pointer hover:text-text-dark"
       >
         <p>{{ committerName }}</p>
       </a>
@@ -62,6 +71,6 @@ defineProps<{
   commitDate?: string | undefined;
   commitUrl?: string | undefined;
   committerUrl?: string | undefined;
-  bgColor: string
+  bgColor?: string;
 }>();
 </script>
