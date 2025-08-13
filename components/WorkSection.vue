@@ -4,8 +4,7 @@
     :section-subtitle="$t('work.subtitle')"
     :highlight-word="$t('work.highlight')"
     anchor-ref="work"
-    padding-t-b="py-16"
-  >
+    padding-t-b="py-16">
     <div class="flex flex-col max-w-4xl gap-8 mx-auto w-full">
       <ExperienceCard
         v-for="work in $tm('work.data')"

@@ -7,8 +7,7 @@
             {{ title }}
           </h3>
           <span
-            class="px-3 py-1 text-sm font-medium text-gray-800 rounded-full bg-accent/40"
-          >
+            class="px-3 py-1 text-sm font-medium text-gray-800 rounded-full bg-accent/40">
             {{ period }}
           </span>
         </div>

@@ -1,16 +1,14 @@
 <template>
   <div
     class="flex flex-col gap-6 p-6 transition-all duration-200 hover:shadow-lg group"
-    :class="bgColor"
-  >
+    :class="bgColor">
     <!-- Header Section -->
     <div class="flex items-start justify-between">
       <div class="flex items-center gap-4">
         <div class="relative">
           <a
             :href="committerUrl"
-            class="block transition-transform hover:scale-105"
-          >
+            class="block transition-transform hover:scale-105">
             <NuxtPicture
               format="webp"
               :src="avatarUrl"
@@ -26,15 +24,13 @@
           <a
             :href="repositoryUrl"
             target="_blank"
-            class="text-lg font-semibold text-gray-900 transition-colors hover:text-primary"
-          >
+            class="text-lg font-semibold text-gray-900 transition-colors hover:text-primary">
             {{ repositoryName }}
           </a>
           <a
             :href="ownerUrl"
             target="_blank"
-            class="text-sm text-gray-600 transition-colors hover:text-gray-900"
-          >
+            class="text-sm text-gray-600 transition-colors hover:text-gray-900">
             {{ ownerName }}
           </a>
         </div>
@@ -48,8 +44,7 @@
         v-if="commitMessage"
         :href="commitUrl"
         target="_blank"
-        class="text-base font-medium leading-relaxed text-gray-900 transition-colors hover:text-primary"
-      >
+        class="text-base font-medium leading-relaxed text-gray-900 transition-colors hover:text-primary">
         {{ commitMessage }}
       </a>
 
@@ -60,8 +55,7 @@
             v-if="committerUrl"
             :href="committerUrl"
             target="_blank"
-            class="font-medium transition-colors hover:text-primary"
-          >
+            class="font-medium transition-colors hover:text-primary">
             {{ committerName }}
           </a>
         </div>

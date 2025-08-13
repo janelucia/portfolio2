@@ -2,8 +2,7 @@
   <div v-if="title" class="flex flex-col items-center gap-2 text-center">
     <p
       class="text-sm font-semibold tracking-widest text-gray-500 uppercase"
-      aria-hidden="true"
-    >
+      aria-hidden="true">
       {{ subtitle || "Section" }}
     </p>
     <h2 class="text-2xl md:text-3xl font-bold text-gray-900" v-html="highlightedTitle"></h2>

@@ -4,8 +4,7 @@
       @click="toggleDropdown"
       class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 transition-all duration-200 border border-gray-200 rounded-lg bg-white hover:border-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
       :aria-label="`Current language: ${currentLanguage.name}. Click to change language`"
-      :aria-expanded="isOpen"
-    >
+      :aria-expanded="isOpen">
       <span>{{ currentLanguage.code.toUpperCase() }}</span>
       <Icon 
         name="heroicons:chevron-down" 
@@ -21,13 +20,11 @@
       enter-to-class="opacity-100 scale-100 translate-y-0"
       leave-active-class="transition ease-in duration-150"
       leave-from-class="opacity-100 scale-100 translate-y-0"
-      leave-to-class="opacity-0 scale-95 translate-y-1"
-    >
+      leave-to-class="opacity-0 scale-95 translate-y-1">
       <div
         v-if="isOpen"
         class="absolute right-0 z-50 w-40 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg backdrop-blur-sm"
-        role="listbox"
-      >
+        role="listbox">
         <div class="py-1">
           <button
             v-for="lang in languages"
@@ -39,8 +36,7 @@
               'text-gray-700': lang.code !== locale
             }"
             role="option"
-            :aria-selected="lang.code === locale"
-          >
+            :aria-selected="lang.code === locale">
             <span class="flex-1 text-left">{{ lang.name }}</span>
             <Icon 
               v-if="lang.code === locale"
