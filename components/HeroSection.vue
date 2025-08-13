@@ -24,13 +24,13 @@
       <div class="flex flex-col justify-center order-2 gap-8 md:order-1">
         <div class="flex flex-col gap-6">
           <h1
-            class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
+            class="text-4xl font-bold leading-tight text-gray-900 md:text-5xl lg:text-6xl">
             {{ $t("hero.greeting") }}<br />
             {{ $t("hero.intro") }} <span class="text-primary">Jane</span>
           </h1>
 
           <div
-            class="flex flex-col gap-4 text-lg md:text-xl leading-relaxed text-gray-600">
+            class="flex flex-col gap-4 text-lg leading-relaxed text-gray-600 md:text-xl">
             <p>{{ old() }} {{ $t("hero.description1") }}</p>
             <p>
               {{ $t("hero.description2") }}
@@ -56,7 +56,7 @@
               v-for="contact in contactInfos"
               :key="contact.url"
               :href="contact.url"
-              :aria-label="`Visit ${contact.name || 'social media'} profile`"
+              :aria-label="`Visit social media profile`"
               class="text-2xl text-gray-600 transition-colors rounded hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               target="_blank"
               rel="noopener noreferrer">

@@ -5,10 +5,10 @@
     :highlight-word="$t('work.highlight')"
     anchor-ref="work"
     padding-t-b="py-16">
-    <div class="flex flex-col max-w-4xl gap-8 mx-auto w-full">
+    <div class="flex flex-col w-full max-w-4xl gap-8 mx-auto">
       <ExperienceCard
-        v-for="work in $tm('work.data')"
-        :key="work"
+        v-for="work in $tm('work.data') as Work[]"
+        :key="work.position"
         :title="$rt(work.position)"
         :subtitle="$rt(work.company)"
         :period="$rt(work.period)"
@@ -20,4 +20,5 @@
 
 <script setup lang="ts">
 import Section from "~/components/Section.vue";
+import type { Work } from "~/helper/types";
 </script>

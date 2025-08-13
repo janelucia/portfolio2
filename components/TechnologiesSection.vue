@@ -58,13 +58,13 @@
           <div class="flex items-center gap-3 mb-3">
             <Icon
               v-if="skillInfos.find((s) => s.name === activeSkill)?.icon"
-              :name="skillInfos.find((s) => s.name === activeSkill)?.icon"
+              :name="skillInfos.find((s) => s.name === activeSkill)?.icon || ''"
               class="w-6 h-6 text-primary"
               aria-hidden="true"
             />
             <h3
               :id="`skill-modal-title-${activeSkill}`"
-              class="text-lg md:text-xl font-semibold text-gray-900">
+              class="text-lg font-semibold text-gray-900 md:text-xl">
               {{ skillInfos.find((s) => s.name === activeSkill)?.name || "" }}
             </h3>
           </div>

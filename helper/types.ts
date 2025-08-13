@@ -1,42 +1,42 @@
-type General = {
-    icon: string;
-    info: string;
+export type General = {
+  icon: string;
+  info: string;
 };
 
-type Education = {
-    program: string;
-    institution: string;
-    period: string;
-    grade?: string;
-    details: string[];
+export type Education = {
+  program: string;
+  institution: string;
+  period: string;
+  grade?: string;
+  details?: any[];
 };
 
-type Work = {
-    position: string;
-    company: string;
-    period: string;
-    details: string[];
+export type Work = {
+  position: string;
+  company: string;
+  period: string;
+  details: string[];
 };
 
-type Skills = {
-    name: string;
+export type Skills = {
+  name: string;
+  icon: string;
+  url: string;
+  description: string;
+};
+
+export type Contact = {
+  [key: string]: {
     icon: string;
     url: string;
-    description: string;
+  };
 };
 
-type Contact = {
-    [key: string]: {
-        icon: string;
-        url: string;
-    };
-};
-
-type Project = {
-    name: string;
-    description: string;
-    currentState: string;
-    image: string;
-    githubUrl: string;
-    liveUrl: string;
+export type Project = {
+  name: string;
+  description: string;
+  currentState: string;
+  image: string;
+  githubUrl: string;
+  liveUrl: string;
 };

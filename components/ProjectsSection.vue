@@ -9,7 +9,7 @@
       class="grid max-w-6xl grid-cols-1 gap-8 mx-auto md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
       <div
         v-for="project in filteredProjects"
-        :key="project"
+        :key="project.name"
         class="flex flex-col h-full overflow-hidden transition-shadow duration-300 border border-gray-200 bg-gray-50 rounded-xl hover:shadow-lg">
         <div class="flex-shrink-0 h-48 bg-gray-100">
           <img
@@ -28,7 +28,7 @@
         <div class="flex flex-col justify-between flex-grow gap-4 p-6">
           <div class="flex flex-col gap-2">
             <div class="flex flex-wrap items-start justify-between gap-4">
-              <h3 class="text-lg md:text-xl font-semibold text-gray-900">
+              <h3 class="text-lg font-semibold text-gray-900 md:text-xl">
                 {{ $rt(project.name) }}
               </h3>
               <span
@@ -75,9 +75,10 @@
 
 <script setup lang="ts">
 import Section from "~/components/Section.vue";
+import type { Project } from "~/helper/types";
 
 const filteredProjects = computed(() => {
-  const projects = $tm('projects.data');
+  const projects = $tm('projects.data') as Project[];
   return projects.filter((project: any) => $rt(project.githubUrl));
 });
 </script>
