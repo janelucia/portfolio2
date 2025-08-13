@@ -25,6 +25,15 @@
       ]
     },
     {
+      "program": "Scholarship",
+      "institution": "Manke-Förderstiftung",
+      "period": "Sep 2024 - present",
+      "details": [
+        "The Manke-Förderstiftung supports students in the field of science.",
+        "The scholarship is awarded based on academic performance and personal motivation."
+      ]
+    },
+    {
       "program": "European Project Semester",
       "institution": "Oslo Metropolitan University",
       "period": "Jan - Jun 2025",
@@ -58,9 +67,7 @@
       "position": "Working Student in Software Development",
       "company": "OTTO",
       "period": "Feb 2024 - Jan 2025",
-      "details": [
-        "Working on different internal projects with primarily React"
-      ]
+      "details": ["Working on different internal projects with primarily React"]
     },
     {
       "position": "Working Student in Software Development",
