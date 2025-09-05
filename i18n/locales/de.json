@@ -98,13 +98,23 @@
     "highlight": "berufliche",
     "data": [
       {
-        "position": "Werkstudent in der Softwareentwicklung",
+        "position": "Werkstudentin in der Softwareentwicklung",
         "company": "OTTO",
-        "period": "Feb 2024 - Jan 2025",
-        "details": ["Arbeit an verschiedenen internen Projekten hauptsächlich mit React"]
+        "period": "Sep 2025 - heute",
+        "details": [
+          "Arbeit an verschiedenen internen Projekten hauptsächlich mit React"
+        ]
       },
       {
-        "position": "Werkstudent in der Softwareentwicklung", 
+        "position": "Werkstudentin in der Softwareentwicklung",
+        "company": "OTTO",
+        "period": "Feb - Dez 2024",
+        "details": [
+          "Arbeit an verschiedenen internen Projekten hauptsächlich mit React"
+        ]
+      },
+      {
+        "position": "Werkstudentin in der Softwareentwicklung",
         "company": "GEPROG",
         "period": "Feb 2022 - 2024",
         "details": [
