@@ -38,7 +38,7 @@
             />
 
             <ContactButton
-              :url="`mailto:${contactInfos.email.url}`"
+              :url="contactInfos.email.url"
               :icon="contactInfos.email.icon"
               icon-class="text-red-600"
               contact-name="Email"
