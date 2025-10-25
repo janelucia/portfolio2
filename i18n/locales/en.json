@@ -20,7 +20,7 @@
     "subtitle": "Skills",
     "title": "Technologies I work with",
     "highlight": "Technologies",
-    "description": "I am always eager to learn new technologies and improve my skills. If you have a project in mind or want to collaborate, feel free to reach out!"
+    "description": "I am always eager to learn new technologies and improve my skills."
   },
   "about": {
     "subtitle": "About me",
@@ -189,9 +189,9 @@
   },
   "contact": {
     "subtitle": "Contact",
-    "title": "Let's create together",
-    "highlight": "create",
-    "description": "I am always open for new projects and collaborations. If you have an idea or a project in mind, feel free to contact me."
+    "title": "Let's connect us",
+    "highlight": "connect",
+    "description": "I'm always open to connecting with fellow developers, tech enthusiasts, and interesting people."
   },
   "footer": {
     "builtWith": "Built with ❤️ in Kiel, Germany",

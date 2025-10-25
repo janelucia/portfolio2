@@ -20,7 +20,7 @@
     "subtitle": "Fähigkeiten",
     "title": "Technologien mit denen ich arbeite",
     "highlight": "Technologien",
-    "description": "Ich bin immer bestrebt, neue Technologien zu lernen und meine Fähigkeiten zu verbessern. Wenn Sie ein Projekt im Kopf haben oder zusammenarbeiten möchten, zögern Sie nicht, mich zu kontaktieren!"
+    "description": "Ich bin immer bestrebt, neue Technologien zu lernen und meine Fähigkeiten zu verbessern."
   },
   "about": {
     "subtitle": "Über mich",
@@ -189,9 +189,9 @@
   },
   "contact": {
     "subtitle": "Kontakt",
-    "title": "Lass uns zusammen erschaffen",
-    "highlight": "zusammen",
-    "description": "Ich bin immer offen für neue Projekte und Kooperationen. Wenn Sie eine Idee oder ein Projekt im Kopf haben, zögern Sie nicht, mich zu kontaktieren."
+    "title": "Lass uns vernetzen",
+    "highlight": "vernetzen",
+    "description": "Ich bin immer offen für den Austausch mit anderen Entwicklern, Tech-Enthusiasten und interessanten Menschen."
   },
   "footer": {
     "builtWith": "Mit ❤️ in Kiel erstellt",
