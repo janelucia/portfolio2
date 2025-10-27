@@ -149,9 +149,14 @@ function checkScroll() {
 const old = () => {
   const currentDate = new Date();
   let yearOld = currentDate.getFullYear() - 1996;
-  if (currentDate.getMonth() < 11 && currentDate.getDate() < 26) {
+
+  if (
+    currentDate.getMonth() < 11 ||
+    (currentDate.getMonth() === 11 && currentDate.getDate() < 26)
+  ) {
     yearOld -= 1;
   }
+
   return yearOld;
 };
 
