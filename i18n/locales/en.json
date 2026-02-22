@@ -9,7 +9,7 @@
   "hero": {
     "greeting": "Moin,",
     "intro": "I am",
-    "description1": "year old frontend developer based in Kiel, currently studying computer science at the University of Applied Sciences.",
+    "description1": "year old software developer based in Kiel, currently pursuing a master's degree in computer science at the University of Applied Sciences Kiel.",
     "description2": "As a former Sociology and educational science major, I'm passionate about the intersection of technology and society.",
     "description3": "Building a digital world that serves everyone.",
     "getInTouch": "Get in touch",
@@ -28,7 +28,7 @@
     "highlight": "journey",
     "text": [
       "My path into tech started in an unexpected way. Studying Sociology and Educational Science taught me how technology can influence people and communities.",
-      "Now, while studying Computer Science at the University of Applied Sciences Kiel, I’m learning to combine technical skills with an awareness of human needs."
+      "Now, while pursuing my Master’s in Computer Science at the University of Applied Sciences Kiel, I’m learning to combine technical skills with an awareness of human needs."
     ],
     "textHighlight": "I aim to create digital solutions that are useful, thoughtful, and accessible to everyone.",
     "whatDrivesMe": "What drives me",
@@ -44,14 +44,10 @@
     "highlight": "academic",
     "data": [
       {
-        "program": "B.Sc. in Computer Science",
+        "program": "M.Sc. in Computer Science",
         "institution": "University of Applied Sciences Kiel",
-        "period": "2022 - present",
-        "grade": "Current Grade: 1.5",
-        "details": [
-          "Focus on artificial intelligence",
-          "Numerous projects with different programming languages. One of which will be featured in the projects section."
-        ]
+        "period": "March 2026 - present",
+        "grade": "Grade: -"
       },
       {
         "program": "Scholarship",
@@ -60,6 +56,16 @@
         "details": [
           "The Manke-Förderstiftung supports students in the field of science.",
           "The scholarship is awarded based on academic performance and personal motivation."
+        ]
+      },
+      {
+        "program": "B.Sc. in Computer Science",
+        "institution": "University of Applied Sciences Kiel",
+        "period": "Sep 2022 - Feb 2026",
+        "grade": "Grade: 1.3",
+        "details": [
+          "Focus on artificial intelligence",
+          "Numerous projects with different programming languages. One of which will be featured in the projects section."
         ]
       },
       {
@@ -73,7 +79,7 @@
       {
         "program": "Frontend Developer Program",
         "institution": "opencampus",
-        "period": "January - July 2022",
+        "period": "Jan - July 2022",
         "details": [
           "Inverted classroom model: learning through videos and asking questions in 'class'",
           "Project 1: A website for a fictional coffee company with HTML, CSS and JS",
@@ -83,7 +89,7 @@
       {
         "program": "B.A. Educational Science and Sociology",
         "institution": "Christian-Albrecht-University Kiel",
-        "period": "2018-2021",
+        "period": "Oct 2018 - March 2021",
         "grade": "Grade: 1.5",
         "details": [
           "Focus on organisational sociology",

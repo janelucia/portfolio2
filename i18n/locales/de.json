@@ -9,7 +9,7 @@
   "hero": {
     "greeting": "Moin,",
     "intro": "Ich bin",
-    "description1": "Jahre alte Frontend-Entwicklerin aus Kiel, studiere derzeit Informatik an der Fachhochschule.",
+    "description1": "Jahre alte Software-Entwicklerin aus Kiel, studiere derzeit Computer Science im Master an der HAW Kiel.",
     "description2": "Als ehemalige Soziologie- und Pädagogikstudentin interessiere ich mich für die Schnittstelle zwischen Technologie und Gesellschaft.",
     "description3": "Eine digitale Welt schaffen, die allen dient.",
     "getInTouch": "Kontakt aufnehmen",
@@ -28,7 +28,7 @@
     "highlight": "Reise",
     "text": [
       "Mein Weg in die Technologie begann auf unerwartete Weise. Das Studium der Soziologie und Pädagogik lehrte mich, wie Technologie Menschen und Gemeinschaften beeinflussen kann.",
-      "Jetzt, während ich Informatik an der Fachhochschule Kiel studiere, lerne ich, technische Fähigkeiten mit einem Bewusstsein für menschliche Bedürfnisse zu kombinieren."
+      "Jetzt, während ich Informatik im Bachelor studierte und nun Computer Science im Master an der Fachhochschule Kiel studiere, lerne ich, technische Fähigkeiten mit einem Bewusstsein für menschliche Bedürfnisse zu kombinieren."
     ],
     "textHighlight": "Ich strebe danach, digitale Lösungen zu schaffen, die nützlich, durchdacht und für alle zugänglich sind.",
     "whatDrivesMe": "Was mich antreibt",
@@ -44,14 +44,10 @@
     "highlight": "akademischer",
     "data": [
       {
-        "program": "B.Sc. in Informatik",
-        "institution": "Fachhochschule Kiel",
-        "period": "2022 - heute",
-        "grade": "Aktuelle Note: 1,5",
-        "details": [
-          "Schwerpunkt auf künstlicher Intelligenz",
-          "Zahlreiche Projekte mit verschiedenen Programmiersprachen. Eines davon wird im Projektbereich vorgestellt."
-        ]
+        "program": "M.Sc. Computer Science",
+        "institution": "HAW Kiel",
+        "period": "März 2026 - heute",
+        "grade": "Grade: -"
       },
       {
         "program": "Stipendium",
@@ -60,6 +56,16 @@
         "details": [
           "Die Manke-Förderstiftung unterstützt Studierende im Bereich der Naturwissenschaften.",
           "Das Stipendium wird basierend auf akademischen Leistungen und persönlicher Motivation vergeben."
+        ]
+      },
+      {
+        "program": "B.Sc. in Informatik",
+        "institution": "HAW Kiel",
+        "period": "Sep 2022 - Feb 2026",
+        "grade": "Note: 1,3",
+        "details": [
+          "Schwerpunkt auf künstlicher Intelligenz",
+          "Zahlreiche Projekte mit verschiedenen Programmiersprachen. Eines davon wird im Projektbereich vorgestellt."
         ]
       },
       {
@@ -83,7 +89,7 @@
       {
         "program": "B.A. Pädagogik und Soziologie",
         "institution": "Christian-Albrechts-Universität Kiel",
-        "period": "2018-2021",
+        "period": "Okt 2018 - März 2021",
         "grade": "Note: 1,5",
         "details": [
           "Schwerpunkt auf Organisationssoziologie",
