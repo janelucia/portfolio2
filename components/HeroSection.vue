@@ -15,7 +15,7 @@
           <NuxtPicture
             format="webp"
             src="/images/Jane.jpg"
-            alt="Portrait of Jane, a frontend developer from Kiel"
+            :alt="$t('common.heroImageAlt')"
             :img-attrs="{
               class: 'w-full h-auto object-contain rounded-2xl shadow-2xl',
             }"

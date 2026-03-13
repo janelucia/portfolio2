@@ -13,126 +13,57 @@
       "info": "Kiel, Germany"
     }
   ],
-  "education": [
-    {
-      "program": "B.Sc. in Computer Science",
-      "institution": "University of Applied Sciences Kiel",
-      "period": "2022 - present",
-      "grade": "Current Grade: 1.5",
-      "details": [
-        "Focus on artificial intelligence",
-        "Numerous projects with different programming languages. One of which will be featured in the projects section."
-      ]
-    },
-    {
-      "program": "Scholarship",
-      "institution": "Manke-Förderstiftung",
-      "period": "Sep 2024 - present",
-      "details": [
-        "The Manke-Förderstiftung supports students in the field of science.",
-        "The scholarship is awarded based on academic performance and personal motivation."
-      ]
-    },
-    {
-      "program": "European Project Semester",
-      "institution": "Oslo Metropolitan University",
-      "period": "Jan - Jun 2025",
-      "details": [
-        "Project: A host for the AI Lab at the university. The project will be carried out by a team of four students from different countries, each bringing diverse skill sets."
-      ]
-    },
-    {
-      "program": "Frontend Developer Program",
-      "institution": "opencampus",
-      "period": "January - July 2022",
-      "details": [
-        "Inverted classroom model: learning through videos and asking questions in 'class'",
-        "Project 1: A website for a fictional coffee company company with HTML, CSS and JS",
-        "Project 2: A fitness app with React, Tailwind CSS and Hygraph"
-      ]
-    },
-    {
-      "program": "B.A. Educational Science and Sociology",
-      "institution": "Christian-Albrecht-University Kiel",
-      "period": "2018-2021",
-      "grade": "Grade: 1.5",
-      "details": [
-        "Focus on organisational sociology",
-        "Bachelor thesis on the topic of New Work. Comparing the concept of New Work within the company OTTO and the company Google portrayed in YouTube videos."
-      ]
-    }
-  ],
-  "work": [
-    {
-      "position": "Working Student in Software Development",
-      "company": "OTTO",
-      "period": "Feb 2024 - Jan 2025",
-      "details": ["Working on different internal projects with primarily React"]
-    },
-    {
-      "position": "Working Student in Software Development",
-      "company": "GEPROG",
-      "period": "Feb 2022 - 2024",
-      "details": [
-        "Working on different projects with primarily Vue.js and Nuxt 3",
-        "Opportunity to write New Work posts for the company"
-      ]
-    }
-  ],
   "skills": [
     {
       "name": "TypeScript",
       "icon": "vscode-icons:file-type-typescript-official",
-      "url": "https://www.typescriptlang.org/",
-      "description": "I regularly use TypeScript in both my job and academic work. It's also the language I chose for personal projects, including building this portfolio."
+      "url": "https://www.typescriptlang.org/"
     },
     {
-      "name": "Vue.js",
+      "name": "Vue",
       "icon": "vscode-icons:file-type-vue",
-      "url": "https://vuejs.org/",
-      "description": "While working at GEPROG, I gained hands-on experience with Vue.js across several projects, building responsive user interfaces and deepening my understanding of this framework."
+      "url": "https://vuejs.org/"
     },
     {
       "name": "Nuxt 3",
       "icon": "vscode-icons:file-type-nuxt",
-      "url": "https://nuxt.com/",
-      "description": "I worked with Nuxt 3 at GEPROG and also used it to build this portfolio. Additionally, I wrote a blog post exploring its features, which helped me refine my skills."
+      "url": "https://nuxt.com/"
     },
     {
       "name": "React",
       "icon": "vscode-icons:file-type-reactjs",
-      "url": "https://react.dev/",
-      "description": "At OTTO, I am working on multiple projects with React, building components and user interfaces for web applications. This helped me improve my knowledge of React’s ecosystem and best practices."
+      "url": "https://react.dev/"
     },
     {
       "name": "Tailwind CSS",
       "icon": "vscode-icons:file-type-tailwind",
-      "url": "https://tailwindcss.com/",
-      "description": "I used Tailwind CSS at both OpenCampus, GEPROG as well as my personal projects to create clean, responsive designs."
+      "url": "https://tailwindcss.com/"
     },
     {
       "name": "Flutter",
       "icon": "vscode-icons:file-type-flutter",
-      "url": "https://flutter.dev/",
-      "description": "As part of my studies, I used Flutter to build a mobile app that connected people with job opportunities nearby. This project helped me develop skills in mobile app development with a focus on cross-platform solutions."
+      "url": "https://flutter.dev/"
     },
     {
       "name": "C++",
       "icon": "vscode-icons:file-type-cpp3",
-      "url": "https://cplusplus.com/",
-      "description": "In my studies, I worked with C++ on a project where my team created a human benchmark game. This project allowed me to enhance my programming skills through practical applications and teamwork."
+      "url": "https://cplusplus.com/"
+    },
+    {
+      "name": "Go",
+      "icon": "vscode-icons:file-type-go",
+      "url": "https://go.dev/"
     },
     {
       "name": "Figma",
       "icon": "devicon:figma",
-      "url": "https://www.figma.com/",
-      "description": "I’ve used Figma in both academic and work settings for designing user interfaces. It’s been especially useful for planning the layout of this portfolio and other projects."
+      "url": "https://www.figma.com/"
     }
   ],
   "contact": {
     "linkedin": {
       "icon": "raphael:linkedin",
-      "url": "https://www.linkedin.com/in/\njane-schönfeld\n\n"
+      "url": "https://www.linkedin.com/in/jane-schönfeld"
     },
     "xing": {
       "icon": "grommet-icons:xing",

@@ -79,7 +79,7 @@
             id="skill-modal-description"
             class="text-base leading-relaxed text-gray-600"
           >
-            {{ skillInfos.find((s) => s.name === activeSkill)?.description }}
+            {{ $t(`technologies.skills.${activeSkill}`) }}
           </p>
         </div>
       </div>

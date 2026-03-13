@@ -11,7 +11,7 @@
           <div class="overflow-hidden shadow-2xl rounded-2xl">
             <LiteYouTubeEmbed
               id="sR6hhkqADF0"
-              title="Mein Studium an der FH Kiel: Informatik"
+              :title="$t('common.youtubeTitle')"
               muted
             />
           </div>

@@ -1,6 +1,8 @@
 {
   "nav": {
     "hello": "Hallo",
+    "technologies": "Technologien",
+    "about": "Über mich",
     "education": "Bildung",
     "work": "Arbeit",
     "projects": "Projekte",
@@ -20,7 +22,18 @@
     "subtitle": "Fähigkeiten",
     "title": "Technologien mit denen ich arbeite",
     "highlight": "Technologien",
-    "description": "Ich bin immer bestrebt, neue Technologien zu lernen und meine Fähigkeiten zu verbessern."
+    "description": "Ich bin immer bestrebt, neue Technologien zu lernen und meine Fähigkeiten zu verbessern.",
+    "skills": {
+      "TypeScript": "Ich verwende TypeScript regelmäßig sowohl in meinem Job als auch im Studium. Es ist auch die Sprache, die ich für persönliche Projekte gewählt habe, einschließlich dieses Portfolios.",
+      "Vue": "Bei GEPROG habe ich in mehreren Projekten praktische Erfahrung mit Vue.js gesammelt, responsive Benutzeroberflächen erstellt und mein Verständnis für dieses Framework vertieft. Außerdem habe ich Vue.js in meinem Erasmus-Semester verwendet, um AI Genie zu entwickeln, einen Host für das AI Lab der OsloMet Universität.",
+      "Nuxt 3": "Ich habe bei GEPROG mit Nuxt 3 gearbeitet und es auch für den Bau dieses Portfolios verwendet.",
+      "React": "Bei OTTO arbeite ich an mehreren Projekten mit React, erstelle Komponenten und Benutzeroberflächen für Webanwendungen. Das hat mir geholfen, mein Wissen über Reacts Ökosystem und Best Practices zu verbessern.",
+      "Tailwind CSS": "Ich habe Tailwind CSS sowohl bei OpenCampus, GEPROG als auch in meinen persönlichen Projekten verwendet, um saubere, responsive Designs zu erstellen.",
+      "Flutter": "Im Rahmen meines Studiums habe ich Flutter verwendet, um eine mobile App zu entwickeln, die Menschen mit Jobangeboten in der Nähe verbindet. Dieses Projekt half mir, Fähigkeiten in der mobilen App-Entwicklung mit Fokus auf plattformübergreifende Lösungen zu entwickeln.",
+      "C++": "In meinem Studium habe ich mit C++ an einem Projekt gearbeitet, bei dem mein Team ein Human-Benchmark-Spiel erstellt hat. Dieses Projekt ermöglichte es mir, meine Programmierfähigkeiten durch praktische Anwendungen und Teamarbeit zu verbessern.",
+      "Go": "Ich habe Go für meine Bachelorarbeit bei OTTO verwendet und es anschließend in meinen täglichen Projekten dort weiter eingesetzt. Das hat mir praktische Erfahrung mit Go in einem professionellen Umfeld gegeben.",
+      "Figma": "Ich habe Figma sowohl im akademischen als auch im beruflichen Umfeld für das Design von Benutzeroberflächen verwendet. Es war besonders nützlich für die Planung des Layouts dieses Portfolios und anderer Projekte."
+    }
   },
   "about": {
     "subtitle": "Über mich",
@@ -47,7 +60,7 @@
         "program": "M.Sc. Computer Science",
         "institution": "HAW Kiel",
         "period": "März 2026 - heute",
-        "grade": "Grade: -"
+        "grade": "Note: -"
       },
       {
         "program": "Stipendium",
@@ -65,7 +78,8 @@
         "grade": "Note: 1,3",
         "details": [
           "Schwerpunkt auf künstlicher Intelligenz",
-          "Zahlreiche Projekte mit verschiedenen Programmiersprachen. Eines davon wird im Projektbereich vorgestellt."
+          "Zahlreiche Projekte mit verschiedenen Programmiersprachen. Eines davon wird im Projektbereich vorgestellt.",
+          "Bachelorarbeit in Kooperation mit OTTO: Optimierung des Aufgabenmanagements im Orbit Taskmanager von Otto: Prototypische Implementierung eines adaptiven Benachrichtigungssystems"
         ]
       },
       {
@@ -73,7 +87,7 @@
         "institution": "Oslo Metropolitan University",
         "period": "Jan - Jun 2025",
         "details": [
-          "Projekt: Ein Host für das AI Lab der Universität. Das Projekt wird von einem Team aus vier Studierenden aus verschiedenen Ländern mit unterschiedlichen Fähigkeiten durchgeführt."
+          "Projekt: AIGenie, ein Host für das AI Lab der Universität. Das Projekt wurde von einem Team aus vier Studierenden aus verschiedenen Ländern mit unterschiedlichen Fähigkeiten durchgeführt."
         ]
       },
       {
@@ -108,7 +122,10 @@
         "company": "OTTO",
         "period": "Sep 2025 - heute",
         "details": [
-          "Arbeit an verschiedenen internen Projekten hauptsächlich mit React"
+          "Technische Planung und Umsetzung von User Stories",
+          "Implementierung neuer Features in einer firmeninternen Software mittels React, TypeScript und Go",
+          "Durchführung von Fehleranalyse und -behebung",
+          "Erstellung der Bachelorarbeit in Kooperation mit OTTO: Optimierung des Aufgabenmanagements im Orbit Taskmanager von Otto"
         ]
       },
       {
@@ -116,7 +133,10 @@
         "company": "OTTO",
         "period": "Feb - Dez 2024",
         "details": [
-          "Arbeit an verschiedenen internen Projekten hauptsächlich mit React"
+          "Technische Planung und Umsetzung von User Stories",
+          "Implementierung neuer Features in einer firmeninternen Software mittels React, TypeScript und Go",
+          "Durchführung von Fehleranalyse und -behebung",
+          "Analyse und Auswahl eines geeigneten Testing-Tools und Erstellung automatisierter Unit-Tests"
         ]
       },
       {
@@ -199,12 +219,46 @@
     "highlight": "vernetzen",
     "description": "Ich bin immer offen für den Austausch mit anderen Entwicklern, Tech-Enthusiasten und interessanten Menschen."
   },
+  "impressum": {
+    "title": "Impressum",
+    "responsibleTitle": "Angaben gemäß § 5 TMG",
+    "contactTitle": "Kontakt",
+    "disclaimerTitle": "Haftungsausschluss",
+    "disclaimerText": "Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.",
+    "linksTitle": "Haftung für Links",
+    "linksText": "Diese Website enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "privacy": {
+    "title": "Datenschutz",
+    "generalTitle": "Datenschutz",
+    "generalText": "Diese Website erhebt keine personenbezogenen Daten aktiv (z. B. über Formulare oder Nutzerkonten), verwendet keine Cookies zu Tracking-Zwecken und setzt keine Analyse-Tools ein.",
+    "hostingTitle": "Hosting",
+    "hostingText": "Diese Website wird auf einem eigenen VPS gehostet. Beim Aufruf der Website werden durch den Webserver automatisch technisch notwendige Verbindungsdaten (z. B. IP-Adresse, Datum und Uhrzeit des Zugriffs sowie Browserinformationen) in Server-Logfiles gespeichert. Diese Daten dienen ausschließlich dem sicheren Betrieb der Website und werden nach kurzer Zeit automatisch gelöscht.",
+    "hostingLegal": "Rechtsgrundlage der Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO.",
+    "externalTitle": "Externe Inhalte",
+    "externalText": "Diese Website bindet Inhalte von externen Anbietern ein. Beim Laden dieser Inhalte kann es zur Übertragung personenbezogener Daten (z. B. Ihrer IP-Adresse) an den jeweiligen Anbieter kommen.",
+    "externalYouTube": "YouTube (Google LLC): https://policies.google.com/privacy",
+    "externalGitHub": "GitHub (Microsoft): https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+    "contactTitle": "Kontakt",
+    "contactText": "Bei Fragen zum Datenschutz können Sie mich jederzeit unter der im Impressum angegebenen E-Mail-Adresse kontaktieren.",
+    "backToHome": "Zurück zur Startseite"
+  },
   "footer": {
     "builtWith": "Mit ❤️ in Kiel erstellt",
-    "copyright": "Jane Schönfeld • Vue.js & Nuxt"
+    "copyright": "Jane Schönfeld",
+    "impressum": "Impressum",
+    "privacy": "Datenschutz"
   },
   "common": {
     "selectLanguage": "Sprache auswählen",
-    "close": "Schließen"
+    "close": "Schließen",
+    "by": "von",
+    "today": "heute",
+    "daysAgo": "vor {count} T.",
+    "weeksAgo": "vor {count} W.",
+    "heroImageAlt": "Portrait von Jane, einer Softwareentwicklerin aus Kiel",
+    "youtubeTitle": "Mein Studium an der FH Kiel: Informatik",
+    "viewSourceCode": "Quellcode auf GitHub ansehen"
   }
 }
