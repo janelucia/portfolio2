@@ -63,13 +63,27 @@
   <main class="flex flex-col items-center gap-4 top-16">
     <slot />
   </main>
-  <footer class="py-8 bg-white border-t border-gray-200">
+  <footer class="py-8">
     <div class="max-w-6xl px-6 mx-auto">
       <div class="flex flex-col items-center gap-2">
         <p class="text-sm text-gray-500">{{ $t("footer.builtWith") }}</p>
         <p class="text-xs text-gray-400">
           © {{ new Date().getFullYear() }} {{ $t("footer.copyright") }}
         </p>
+        <div class="flex gap-4">
+          <NuxtLink
+            to="/impressum"
+            class="text-xs text-gray-400 transition-colors hover:text-primary"
+          >
+            Legal Notice
+          </NuxtLink>
+          <NuxtLink
+            to="/datenschutz"
+            class="text-xs text-gray-400 transition-colors hover:text-primary"
+          >
+            Privacy Policy
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </footer>
@@ -86,6 +100,8 @@ const activeSection = ref("hello");
 
 const navigation = [
   { name: "Hello", url: "#hello", id: "hello" },
+  { name: "Technologies", url: "#technologies", id: "technologies" },
+  { name: "About", url: "#about", id: "about" },
   { name: "Education", url: "#education", id: "education" },
   { name: "Work", url: "#work", id: "work" },
   { name: "Projects", url: "#projects", id: "projects" },
@@ -125,7 +141,7 @@ function setupAnchorObserver() {
       }
     });
 
-    const sectionOrder = ["hello", "education", "work", "projects", "contact"];
+    const sectionOrder = ["hello", "technologies", "about", "education", "work", "projects", "contact"];
     let newActiveSection = activeSection.value;
 
     if (visibleAnchors.value.size > 0) {
@@ -147,7 +163,7 @@ function setupAnchorObserver() {
     activeSection.value = newActiveSection;
   }, observerConfig);
 
-  const anchors = ["hello", "education", "work", "projects", "contact"];
+  const anchors = ["hello", "technologies", "about", "education", "work", "projects", "contact"];
   anchors.forEach((anchorId) => {
     const element = document.getElementById(anchorId);
     if (element) {
